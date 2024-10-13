@@ -13,10 +13,15 @@
 Linguagem C
 
   Este programa foi desenvolvido para controlar grafos:
+  
 					- Leitura de um grafo de um ficheiro.
+     
 					- Criação de um novo grafo.
+     
 					- Inserção e eliminação de vértices e adjacências.
+     
 					- Salva e carrega do grafo em um ficheiro.
+     
 					- Realização de operações de busca e contagem de caminhos.
 	
 
