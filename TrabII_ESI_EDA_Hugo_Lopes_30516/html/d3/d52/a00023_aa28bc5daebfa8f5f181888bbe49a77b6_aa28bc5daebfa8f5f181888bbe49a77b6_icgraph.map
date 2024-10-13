@@ -1,0 +1,11 @@
+<map id="InsertVertice" name="InsertVertice">
+<area shape="rect" id="Node000001" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="404,31,499,57"/>
+<area shape="rect" id="Node000002" href="$d7/d46/a00002_a603070d5f2a852b70e1ceb0829a544ab.html#a603070d5f2a852b70e1ceb0829a544ab" title=" " alt="" coords="244,31,356,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="389,47,357,47,357,41,389,41"/>
+<area shape="rect" id="Node000003" href="$d7/d46/a00002_ad7ed5f4aa22680572bc8b7bafed8aaa9.html#ad7ed5f4aa22680572bc8b7bafed8aaa9" title=" " alt="" coords="105,5,194,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,35,194,29,195,24,229,29"/>
+<area shape="rect" id="Node000005" href="$d7/d46/a00002_ad70baf45d077821263730f90fe0674d7.html#ad70baf45d077821263730f90fe0674d7" title=" " alt="" coords="103,56,196,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="229,59,197,64,196,59,228,53"/>
+<area shape="rect" id="Node000004" href="$d2/de7/a00014_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="89,21,55,21,55,16,89,16"/>
+</map>

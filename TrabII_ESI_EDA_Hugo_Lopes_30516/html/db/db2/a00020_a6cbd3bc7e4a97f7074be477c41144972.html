@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho Prático de Estruturas de Dados Avançados: ShowGraph</title>
+<link rel="icon" href="../../Captura de ecrã 2024-05-25 005639.png" type="image/x-icon" />
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../Captura de ecrã 2024-05-25 005608.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Trabalho Prático de Estruturas de Dados Avançados<span id="projectnumber">&#160;001</span>
+   </div>
+   <div id="projectbrief">Fase II - Grafos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../db/db2/a00020.html">Vertices.c</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="contents">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+   <td valign="top">
+      <div class="navtab">
+        <table>
+          <tr><td class="navtab"><a class="navtab" href="../../db/db2/a00020_aa73902e559feec8c1bb5c69137ed2500.html#aa73902e559feec8c1bb5c69137ed2500">CreateVertice</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../db/db2/a00020_a36c11fed31d504edb16338c508f03b26.html#a36c11fed31d504edb16338c508f03b26">DeleteAllAdjVert</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../db/db2/a00020_a71070216b78aa3bc49e32755f0ce4213.html#a71070216b78aa3bc49e32755f0ce4213">DeleteVertice</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../db/db2/a00020_a108c36b33043240c00fabb2a396c4fd9.html#a108c36b33043240c00fabb2a396c4fd9">DestroiVertice</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../db/db2/a00020_ab1d21034485a716467af25abb6266596.html#ab1d21034485a716467af25abb6266596">ExistVertice</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../db/db2/a00020_aa28bc5daebfa8f5f181888bbe49a77b6.html#aa28bc5daebfa8f5f181888bbe49a77b6">InsertVertice</a></td></tr>
+          <tr><td class="navtabHL"><a class="navtab" href="../../db/db2/a00020_a6cbd3bc7e4a97f7074be477c41144972.html#a6cbd3bc7e4a97f7074be477c41144972">ShowGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../db/db2/a00020_a1336c120d301d7a04b4c2cf67b8d4177.html#a1336c120d301d7a04b4c2cf67b8d4177">WhereIsVertice</a></td></tr>
+        </table>
+      </div>
+   </td>
+   <td valign="top" class="mempage">
+<a id="a6cbd3bc7e4a97f7074be477c41144972" name="a6cbd3bc7e4a97f7074be477c41144972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbd3bc7e4a97f7074be477c41144972">&#9670;&#160;</a></span>ShowGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ShowGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d6d/a00055.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>graph</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mostra os vértices e suas adjacências no grafo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td>O apontador para o grafo a ser mostrado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se o grafo não estiver vazio e for mostrado com sucesso; false caso contrário. </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/db2/a00020_a6cbd3bc7e4a97f7074be477c41144972_a6cbd3bc7e4a97f7074be477c41144972_icgraph.png" border="0" usemap="#adb/db2/a00020_a6cbd3bc7e4a97f7074be477c41144972_a6cbd3bc7e4a97f7074be477c41144972_icgraph" alt=""/></div>
+<map name="adb/db2/a00020_a6cbd3bc7e4a97f7074be477c41144972_a6cbd3bc7e4a97f7074be477c41144972_icgraph" id="adb/db2/a00020_a6cbd3bc7e4a97f7074be477c41144972_a6cbd3bc7e4a97f7074be477c41144972_icgraph">
+<area shape="rect" title="Mostra os vértices e suas adjacências no grafo." alt="" coords="246,5,334,32"/>
+<area shape="rect" href="../../d7/d46/a00002_aa97298e9038c847371a8d020189922ea.html#aa97298e9038c847371a8d020189922ea" title=" " alt="" coords="103,5,198,32"/>
+<area shape="poly" title=" " alt="" coords="230,21,199,21,199,16,230,16"/>
+<area shape="rect" href="../../d2/de7/a00014_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

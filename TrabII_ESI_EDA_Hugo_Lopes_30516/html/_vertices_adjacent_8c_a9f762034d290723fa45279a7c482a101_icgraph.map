@@ -1,0 +1,17 @@
+<map id="DestroyAdjacent" name="DestroyAdjacent">
+<area shape="rect" id="Node000001" title="Liberta a memória alocada para um nó de adjacência." alt="" coords="558,31,675,57"/>
+<area shape="rect" id="Node000002" href="$_vertices_adjacent_8c.html#a785cb3dfbc28d08973ee247ecd7a6332" title="Remove todos os nós de adjacência de uma lista ligada de adjacências." alt="" coords="417,5,510,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="542,34,510,29,510,24,543,29"/>
+<area shape="rect" id="Node000006" href="$_graph_8c.html#ad3f38b3acc6073e67c98d734c28d53ec" title=" " alt="" coords="268,56,369,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="542,53,370,68,370,62,542,48"/>
+<area shape="rect" id="Node000003" href="$_vertices_8c.html#a71070216b78aa3bc49e32755f0ce4213" title="Remove um vértice com o código especificado de uma lista ligada de vértices." alt="" coords="269,5,368,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,21,369,21,369,16,402,16"/>
+<area shape="rect" id="Node000004" href="$_graph_8c.html#a98e734940b3c843e7af4fb68c2b8281e" title=" " alt="" coords="103,5,220,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="253,21,220,21,220,16,253,16"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="111,41,56,62,54,57,110,36"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="252,72,55,72,55,67,252,67"/>
+<area shape="rect" id="Node000007" href="$_graph_8c.html#ad70baf45d077821263730f90fe0674d7" title=" " alt="" coords="115,107,208,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="261,91,206,109,204,104,260,85"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="110,103,54,81,56,76,111,98"/>
+</map>

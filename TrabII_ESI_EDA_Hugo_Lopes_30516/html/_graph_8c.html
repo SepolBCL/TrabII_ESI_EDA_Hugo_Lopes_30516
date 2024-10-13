@@ -1,0 +1,1255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho Prático de Estruturas de Dados Avançados: Referência ao ficheiro Graph.c</title>
+<link rel="icon" href="Captura de ecrã 2024-05-25 005639.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Captura de ecrã 2024-05-25 005608.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Trabalho Prático de Estruturas de Dados Avançados<span id="projectnumber">&#160;001</span>
+   </div>
+   <div id="projectbrief">Fase II - Grafos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro Graph.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementação das funções relacionadas a grafos.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;malloc.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_vertices_adjacent_8h_source.html">VerticesAdjacent.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vertices_8h_source.html">Vertices.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_graph_8h_source.html">Graph.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_n_8h_source.html">IN.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para Graph.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c__incl.png" border="0" usemap="#a_graph_8c" alt=""/></div>
+<map name="a_graph_8c" id="a_graph_8c">
+<area shape="rect" title="Implementação das funções relacionadas a grafos." alt="" coords="282,5,349,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,69,107"/>
+<area shape="poly" title=" " alt="" coords="282,31,84,82,83,76,281,26"/>
+<area shape="rect" title=" " alt="" coords="92,80,153,107"/>
+<area shape="poly" title=" " alt="" coords="283,35,168,78,166,73,281,30"/>
+<area shape="rect" title=" " alt="" coords="177,80,247,107"/>
+<area shape="poly" title=" " alt="" coords="299,35,244,73,241,69,296,30"/>
+<area shape="rect" title=" " alt="" coords="341,304,416,331"/>
+<area shape="poly" title=" " alt="" coords="315,33,302,97,300,139,305,181,316,212,330,241,361,290,357,293,325,244,311,214,300,182,294,139,296,96,309,32"/>
+<area shape="rect" href="_vertices_adjacent_8h.html" title=" " alt="" coords="365,229,496,256"/>
+<area shape="poly" title=" " alt="" coords="328,31,367,82,409,154,428,214,423,215,404,156,363,85,324,34"/>
+<area shape="rect" href="_vertices_8h.html" title="Definições das estruturas e protótipos das funções relacionadas a vértices." alt="" coords="314,155,395,181"/>
+<area shape="poly" title=" " alt="" coords="322,32,350,139,345,140,316,33"/>
+<area shape="rect" href="_graph_8h.html" title="Definições das estruturas e protótipos das funções relacionadas a grafos." alt="" coords="469,80,536,107"/>
+<area shape="poly" title=" " alt="" coords="349,30,456,71,455,76,347,35"/>
+<area shape="rect" href="_i_n_8h.html" title=" " alt="" coords="571,155,615,181"/>
+<area shape="poly" title=" " alt="" coords="350,18,393,22,446,31,500,49,549,78,573,107,588,139,583,141,569,110,546,82,498,54,444,36,393,27,350,23"/>
+<area shape="poly" title=" " alt="" coords="423,258,398,293,394,290,419,255"/>
+<area shape="poly" title=" " alt="" coords="355,182,353,216,356,255,367,289,362,291,350,257,347,216,350,182"/>
+<area shape="poly" title=" " alt="" coords="369,180,408,217,405,221,366,184"/>
+<area shape="poly" title=" " alt="" coords="510,106,518,135,525,174,524,217,519,238,510,257,494,276,474,290,431,308,429,304,472,286,491,272,505,255,514,236,519,216,520,175,513,137,505,108"/>
+<area shape="poly" title=" " alt="" coords="499,108,446,216,441,214,494,106"/>
+<area shape="poly" title=" " alt="" coords="478,110,395,150,393,145,475,105"/>
+<area shape="poly" title=" " alt="" coords="520,105,567,143,564,147,516,109"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a385294e5113408793f93ce8174a616ec" id="r_a385294e5113408793f93ce8174a616ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a385294e5113408793f93ce8174a616ec">CreateGraph</a> (int *totV, bool *res)</td></tr>
+<tr class="separator:a385294e5113408793f93ce8174a616ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603070d5f2a852b70e1ceb0829a544ab" id="r_a603070d5f2a852b70e1ceb0829a544ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a603070d5f2a852b70e1ceb0829a544ab">InsertVertGraph</a> (<a class="el" href="struct_graph.html">Graph</a> *G, <a class="el" href="struct_node.html">Node</a> *new, bool *res)</td></tr>
+<tr class="separator:a603070d5f2a852b70e1ceb0829a544ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e77bd9020f2f99758b2eed82407a08" id="r_a99e77bd9020f2f99758b2eed82407a08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99e77bd9020f2f99758b2eed82407a08">InsertAdjaGraph</a> (<a class="el" href="struct_graph.html">Graph</a> *G, int idOrigin, int idDestiny, int peso, bool *res)</td></tr>
+<tr class="separator:a99e77bd9020f2f99758b2eed82407a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad8e2487e53495fa613603d657feb83e" id="r_aad8e2487e53495fa613603d657feb83e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad8e2487e53495fa613603d657feb83e">DeleteAdjGraph</a> (<a class="el" href="struct_graph.html">Graph</a> *G, int origin, int destiny, bool *res)</td></tr>
+<tr class="separator:aad8e2487e53495fa613603d657feb83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade720421e8269dbe12bf6e14c3fa47ff" id="r_ade720421e8269dbe12bf6e14c3fa47ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade720421e8269dbe12bf6e14c3fa47ff">WhereIsVertGraph</a> (<a class="el" href="struct_graph.html">Graph</a> *G, int idVertice)</td></tr>
+<tr class="separator:ade720421e8269dbe12bf6e14c3fa47ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e734940b3c843e7af4fb68c2b8281e" id="r_a98e734940b3c843e7af4fb68c2b8281e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98e734940b3c843e7af4fb68c2b8281e">DeleteVertGraph</a> (<a class="el" href="struct_graph.html">Graph</a> *G, int codVertice, bool *res)</td></tr>
+<tr class="separator:a98e734940b3c843e7af4fb68c2b8281e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb87d52692567a0df44de86a63e1580" id="r_afcb87d52692567a0df44de86a63e1580"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcb87d52692567a0df44de86a63e1580">ExistVertGraph</a> (<a class="el" href="struct_graph.html">Graph</a> *G, int idVertice)</td></tr>
+<tr class="separator:afcb87d52692567a0df44de86a63e1580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97298e9038c847371a8d020189922ea" id="r_aa97298e9038c847371a8d020189922ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa97298e9038c847371a8d020189922ea">ShowGraph2</a> (<a class="el" href="struct_graph.html">Graph</a> *Gr)</td></tr>
+<tr class="separator:aa97298e9038c847371a8d020189922ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f38b3acc6073e67c98d734c28d53ec" id="r_ad3f38b3acc6073e67c98d734c28d53ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3f38b3acc6073e67c98d734c28d53ec">DestroyGraph</a> (<a class="el" href="struct_graph.html">Graph</a> *G, bool *res)</td></tr>
+<tr class="separator:ad3f38b3acc6073e67c98d734c28d53ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ed5f4aa22680572bc8b7bafed8aaa9" id="r_ad7ed5f4aa22680572bc8b7bafed8aaa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7ed5f4aa22680572bc8b7bafed8aaa9">ins_vert_adj</a> (<a class="el" href="struct_graph.html">Graph</a> *G, <a class="el" href="struct_node2.html">Node2</a> *inicio, int *vert, int *adj, bool *res)</td></tr>
+<tr class="separator:ad7ed5f4aa22680572bc8b7bafed8aaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656b3ba16c40adb47128425bacc9a724" id="r_a656b3ba16c40adb47128425bacc9a724"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a656b3ba16c40adb47128425bacc9a724">SaveGraph</a> (<a class="el" href="struct_graph.html">Graph</a> *G, char *fileName)</td></tr>
+<tr class="separator:a656b3ba16c40adb47128425bacc9a724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70baf45d077821263730f90fe0674d7" id="r_ad70baf45d077821263730f90fe0674d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad70baf45d077821263730f90fe0674d7">LoadGraphB</a> (const char *ficheiro, bool *resultado)</td></tr>
+<tr class="separator:ad70baf45d077821263730f90fe0674d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028487caf2384c2ecfdceff17f7882eb" id="r_a028487caf2384c2ecfdceff17f7882eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a028487caf2384c2ecfdceff17f7882eb">FindVerticeId</a> (<a class="el" href="struct_graph.html">Graph</a> *g, int cod)</td></tr>
+<tr class="separator:a028487caf2384c2ecfdceff17f7882eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726964328a14a01af3a6729c01250bfc" id="r_a726964328a14a01af3a6729c01250bfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a726964328a14a01af3a6729c01250bfc">ResetVerticesVisitados</a> (<a class="el" href="struct_graph.html">Graph</a> *g)</td></tr>
+<tr class="memdesc:a726964328a14a01af3a6729c01250bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa o estado "visitado" de todos os vértices do grafo.  <br /></td></tr>
+<tr class="separator:a726964328a14a01af3a6729c01250bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4a609991445ca7e3e26b7be4bab8c3" id="r_afe4a609991445ca7e3e26b7be4bab8c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe4a609991445ca7e3e26b7be4bab8c3">CountPaths</a> (<a class="el" href="struct_graph.html">Graph</a> *g, int src, int dst, int pathCount)</td></tr>
+<tr class="memdesc:afe4a609991445ca7e3e26b7be4bab8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conta o número de caminhos possíveis entre dois vértices num grafo.  <br /></td></tr>
+<tr class="separator:afe4a609991445ca7e3e26b7be4bab8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e03840147dd6e1d0d6fde9a6f730733" id="r_a9e03840147dd6e1d0d6fde9a6f730733"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e03840147dd6e1d0d6fde9a6f730733">CountPathsVertices</a> (<a class="el" href="struct_graph.html">Graph</a> *g, int src, int dest)</td></tr>
+<tr class="memdesc:a9e03840147dd6e1d0d6fde9a6f730733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conta o número de caminhos possíveis entre dois vértices num grafo.  <br /></td></tr>
+<tr class="separator:a9e03840147dd6e1d0d6fde9a6f730733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4081847af97ff9789b0f959b84eabf81" id="r_a4081847af97ff9789b0f959b84eabf81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4081847af97ff9789b0f959b84eabf81">DepthFirstSearchRec</a> (<a class="el" href="struct_graph.html">Graph</a> *g, int origem, int dest)</td></tr>
+<tr class="memdesc:a4081847af97ff9789b0f959b84eabf81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca em Profundidade Recursiva.  <br /></td></tr>
+<tr class="separator:a4081847af97ff9789b0f959b84eabf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9f3a4f1a421a152837221f4d7f9f1a" id="r_a2c9f3a4f1a421a152837221f4d7f9f1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_best.html">Best</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c9f3a4f1a421a152837221f4d7f9f1a">BestPath</a> (<a class="el" href="struct_graph.html">Graph</a> *g, int n, int v)</td></tr>
+<tr class="memdesc:a2c9f3a4f1a421a152837221f4d7f9f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algoritmo de Dijkstra.  <br /></td></tr>
+<tr class="separator:a2c9f3a4f1a421a152837221f4d7f9f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea9d05dfeb219cf833d3c77b91e59df" id="r_a4ea9d05dfeb219cf833d3c77b91e59df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ea9d05dfeb219cf833d3c77b91e59df">ShowAllPath</a> (<a class="el" href="struct_best.html">Best</a> b, int n, int v)</td></tr>
+<tr class="memdesc:a4ea9d05dfeb219cf833d3c77b91e59df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra todos os caminhos mais curtos a partir de um vértice inicial.  <br /></td></tr>
+<tr class="separator:a4ea9d05dfeb219cf833d3c77b91e59df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Implementação das funções relacionadas a grafos. </p>
+<p>Este ficheiro contém a implementação das funções necessárias para manipular grafos, incluindo a criação, manipulação e liberação de memória.</p>
+<dl class="section date"><dt>Data</dt><dd>May 2024 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Hugo Lopes_30516 </dd></dl>
+</div><h2 class="groupheader">Documentação das funções</h2>
+<a id="a2c9f3a4f1a421a152837221f4d7f9f1a" name="a2c9f3a4f1a421a152837221f4d7f9f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9f3a4f1a421a152837221f4d7f9f1a">&#9670;&#160;</a></span>BestPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_best.html">Best</a> BestPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Algoritmo de Dijkstra. </p>
+<p>Este algoritmo calcula o caminho mais curto de um vértice inicial para todos os outros vértices em um grafo ponderado não direcionado.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>O apontador para o grafo. </td></tr>
+    <tr><td class="paramname">n</td><td>O número total de vértices no grafo. </td></tr>
+    <tr><td class="paramname">v</td><td>O vértice inicial para o qual será calculado o caminho mais curto. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna uma estrutura <code><a class="el" href="struct_best.html" title="Estrutura para armazenar o melhor caminho.">Best</a></code> contendo o caminho mais curto e os vértices predecessores para cada vértice no grafo. </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>lufer </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a2c9f3a4f1a421a152837221f4d7f9f1a_icgraph.png" border="0" usemap="#a_graph_8c_a2c9f3a4f1a421a152837221f4d7f9f1a_icgraph" alt=""/></div>
+<map name="a_graph_8c_a2c9f3a4f1a421a152837221f4d7f9f1a_icgraph" id="a_graph_8c_a2c9f3a4f1a421a152837221f4d7f9f1a_icgraph">
+<area shape="rect" title="Algoritmo de Dijkstra." alt="" coords="103,5,178,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afe4a609991445ca7e3e26b7be4bab8c3" name="afe4a609991445ca7e3e26b7be4bab8c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4a609991445ca7e3e26b7be4bab8c3">&#9670;&#160;</a></span>CountPaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CountPaths </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pathCount</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conta o número de caminhos possíveis entre dois vértices num grafo. </p>
+<p>Esta função calcula o número de caminhos possíveis entre dois vértices num grafo não direcionado.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>O apontador para o grafo onde será feita a contagem de caminhos. </td></tr>
+    <tr><td class="paramname">src</td><td>O ID do vértice de origem. </td></tr>
+    <tr><td class="paramname">dst</td><td>O ID do vértice de destino. </td></tr>
+    <tr><td class="paramname">pathCount</td><td>O número atual de caminhos contados. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O número total de caminhos possíveis entre os vértices de origem e destino. </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>lufer </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_afe4a609991445ca7e3e26b7be4bab8c3_cgraph.png" border="0" usemap="#a_graph_8c_afe4a609991445ca7e3e26b7be4bab8c3_cgraph" alt=""/></div>
+<map name="a_graph_8c_afe4a609991445ca7e3e26b7be4bab8c3_cgraph" id="a_graph_8c_afe4a609991445ca7e3e26b7be4bab8c3_cgraph">
+<area shape="rect" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="5,29,95,56"/>
+<area shape="poly" title=" " alt="" coords="25,30,21,21,24,11,34,5,50,3,67,5,77,12,73,16,65,10,50,8,36,10,28,14,26,20,30,28"/>
+<area shape="rect" href="_graph_8c.html#a028487caf2384c2ecfdceff17f7882eb" title=" " alt="" coords="143,29,240,56"/>
+<area shape="poly" title=" " alt="" coords="95,40,127,40,127,45,95,45"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_afe4a609991445ca7e3e26b7be4bab8c3_icgraph.png" border="0" usemap="#a_graph_8c_afe4a609991445ca7e3e26b7be4bab8c3_icgraph" alt=""/></div>
+<map name="a_graph_8c_afe4a609991445ca7e3e26b7be4bab8c3_icgraph" id="a_graph_8c_afe4a609991445ca7e3e26b7be4bab8c3_icgraph">
+<area shape="rect" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="288,29,377,56"/>
+<area shape="poly" title=" " alt="" coords="360,16,350,10,333,8,316,10,307,15,305,20,309,28,305,30,300,21,303,11,314,5,333,3,352,5,363,12"/>
+<area shape="rect" href="_graph_8c.html#a9e03840147dd6e1d0d6fde9a6f730733" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="103,29,240,56"/>
+<area shape="poly" title=" " alt="" coords="273,45,240,45,240,40,273,40"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="87,45,55,45,55,40,87,40"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9e03840147dd6e1d0d6fde9a6f730733" name="a9e03840147dd6e1d0d6fde9a6f730733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e03840147dd6e1d0d6fde9a6f730733">&#9670;&#160;</a></span>CountPathsVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CountPathsVertices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dest</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conta o número de caminhos possíveis entre dois vértices num grafo. </p>
+<p>Esta função conta o número de caminhos possíveis entre dois vértices num grafo não direcionado, utilizando uma função auxiliar para reiniciar o estado "visitado" de todos os vértices antes de iniciar a contagem de caminhos. É uma função recursiva.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>O apontador para o grafo onde será feita a contagem de caminhos. </td></tr>
+    <tr><td class="paramname">src</td><td>O ID do vértice de origem. </td></tr>
+    <tr><td class="paramname">dest</td><td>O ID do vértice de destino. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O número total de caminhos possíveis entre os vértices de origem e destino. </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>lufer </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a9e03840147dd6e1d0d6fde9a6f730733_cgraph.png" border="0" usemap="#a_graph_8c_a9e03840147dd6e1d0d6fde9a6f730733_cgraph" alt=""/></div>
+<map name="a_graph_8c_a9e03840147dd6e1d0d6fde9a6f730733_cgraph" id="a_graph_8c_a9e03840147dd6e1d0d6fde9a6f730733_cgraph">
+<area shape="rect" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="5,55,143,81"/>
+<area shape="rect" href="_graph_8c.html#afe4a609991445ca7e3e26b7be4bab8c3" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="225,29,314,56"/>
+<area shape="poly" title=" " alt="" coords="143,56,209,48,210,53,144,62"/>
+<area shape="rect" href="_graph_8c.html#a726964328a14a01af3a6729c01250bfc" title="Limpa o estado &quot;visitado&quot; de todos os vértices do grafo." alt="" coords="191,80,348,107"/>
+<area shape="poly" title=" " alt="" coords="144,74,175,78,175,84,143,80"/>
+<area shape="poly" title=" " alt="" coords="239,30,234,21,238,11,250,5,269,3,290,5,302,12,299,16,289,10,269,8,251,10,241,15,239,20,244,28"/>
+<area shape="rect" href="_graph_8c.html#a028487caf2384c2ecfdceff17f7882eb" title=" " alt="" coords="396,29,493,56"/>
+<area shape="poly" title=" " alt="" coords="314,40,381,40,381,45,314,45"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a9e03840147dd6e1d0d6fde9a6f730733_icgraph.png" border="0" usemap="#a_graph_8c_a9e03840147dd6e1d0d6fde9a6f730733_icgraph" alt=""/></div>
+<map name="a_graph_8c_a9e03840147dd6e1d0d6fde9a6f730733_icgraph" id="a_graph_8c_a9e03840147dd6e1d0d6fde9a6f730733_icgraph">
+<area shape="rect" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="103,5,240,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a385294e5113408793f93ce8174a616ec" name="a385294e5113408793f93ce8174a616ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385294e5113408793f93ce8174a616ec">&#9670;&#160;</a></span>CreateGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * CreateGraph </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>totV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cria um novo grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">totV</td><td>O número total de vértices do grafo. </td></tr>
+    <tr><td class="paramname">res</td><td>Apontador para um booleano que indica se a criação foi bem - sucedida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Um apontador para o novo grafo criado, ou NULL se a alocação de memória falhar ou totV for inválido. </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a385294e5113408793f93ce8174a616ec_icgraph.png" border="0" usemap="#a_graph_8c_a385294e5113408793f93ce8174a616ec_icgraph" alt=""/></div>
+<map name="a_graph_8c_a385294e5113408793f93ce8174a616ec_icgraph" id="a_graph_8c_a385294e5113408793f93ce8174a616ec_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,197,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad8e2487e53495fa613603d657feb83e" name="aad8e2487e53495fa613603d657feb83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad8e2487e53495fa613603d657feb83e">&#9670;&#160;</a></span>DeleteAdjGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * DeleteAdjGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>destiny</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove uma adjacência entre dois vértices no grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">G</td><td>O grafo no qual a adjacência será removida. </td></tr>
+    <tr><td class="paramname">origin</td><td>O ID do vértice de origem. </td></tr>
+    <tr><td class="paramname">destiny</td><td>O ID do vértice de destino. </td></tr>
+    <tr><td class="paramname">res</td><td>Um apontador para um booleano que indica se a operação foi bem-sucedida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O apontador para o grafo atualizado, ou NULL em caso de erro. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_aad8e2487e53495fa613603d657feb83e_cgraph.png" border="0" usemap="#a_graph_8c_aad8e2487e53495fa613603d657feb83e_cgraph" alt=""/></div>
+<map name="a_graph_8c_aad8e2487e53495fa613603d657feb83e_cgraph" id="a_graph_8c_aad8e2487e53495fa613603d657feb83e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,118,57"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a78dc3cd9c4e888f1c433a3774f6a430c" title="Remove um nó de adjacência com o código especificado de uma lista ligada de adjacências." alt="" coords="182,5,260,32"/>
+<area shape="poly" title=" " alt="" coords="118,32,166,25,167,30,118,38"/>
+<area shape="rect" href="_vertices_8c.html#a1336c120d301d7a04b4c2cf67b8d4177" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="166,56,276,83"/>
+<area shape="poly" title=" " alt="" coords="118,50,151,56,150,61,118,56"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_aad8e2487e53495fa613603d657feb83e_icgraph.png" border="0" usemap="#a_graph_8c_aad8e2487e53495fa613603d657feb83e_icgraph" alt=""/></div>
+<map name="a_graph_8c_aad8e2487e53495fa613603d657feb83e_icgraph" id="a_graph_8c_aad8e2487e53495fa613603d657feb83e_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,215,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a98e734940b3c843e7af4fb68c2b8281e" name="a98e734940b3c843e7af4fb68c2b8281e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98e734940b3c843e7af4fb68c2b8281e">&#9670;&#160;</a></span>DeleteVertGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * DeleteVertGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>codVertice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove um vértice e todas as suas adjacências de um grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>O apontador para o grafo onde o vértice será removido. </td></tr>
+    <tr><td class="paramname">codVertice</td><td>O código do vértice a ser removido. </td></tr>
+    <tr><td class="paramname">res</td><td>O apontador para uma variável que armazenará o resultado da operação. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O apontador para o grafo atualizado após a remoção do vértice e suas adjacências. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a98e734940b3c843e7af4fb68c2b8281e_cgraph.png" border="0" usemap="#a_graph_8c_a98e734940b3c843e7af4fb68c2b8281e_cgraph" alt=""/></div>
+<map name="a_graph_8c_a98e734940b3c843e7af4fb68c2b8281e_cgraph" id="a_graph_8c_a98e734940b3c843e7af4fb68c2b8281e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,123,57"/>
+<area shape="rect" href="_vertices_8c.html#a36c11fed31d504edb16338c508f03b26" title="Remove todas as adjacências com o código especificado de todos os vértices numa lista ligada de vérti..." alt="" coords="171,5,287,32"/>
+<area shape="poly" title=" " alt="" coords="123,32,155,27,155,33,123,38"/>
+<area shape="rect" href="_vertices_8c.html#a71070216b78aa3bc49e32755f0ce4213" title="Remove um vértice com o código especificado de uma lista ligada de vértices." alt="" coords="179,56,279,83"/>
+<area shape="poly" title=" " alt="" coords="123,50,164,57,163,62,123,56"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a78dc3cd9c4e888f1c433a3774f6a430c" title="Remove um nó de adjacência com o código especificado de uma lista ligada de adjacências." alt="" coords="348,5,425,32"/>
+<area shape="poly" title=" " alt="" coords="288,16,332,16,332,21,288,21"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a785cb3dfbc28d08973ee247ecd7a6332" title="Remove todos os nós de adjacência de uma lista ligada de adjacências." alt="" coords="341,56,433,83"/>
+<area shape="poly" title=" " alt="" coords="279,67,325,67,325,72,279,72"/>
+<area shape="rect" href="_vertices_8c.html#a108c36b33043240c00fabb2a396c4fd9" title="Liberta a memória alocada para um vértice." alt="" coords="335,107,438,133"/>
+<area shape="poly" title=" " alt="" coords="274,81,329,99,328,104,272,86"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a9f762034d290723fa45279a7c482a101" title="Liberta a memória alocada para um nó de adjacência." alt="" coords="486,56,604,83"/>
+<area shape="poly" title=" " alt="" coords="433,67,470,67,470,72,433,72"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a98e734940b3c843e7af4fb68c2b8281e_icgraph.png" border="0" usemap="#a_graph_8c_a98e734940b3c843e7af4fb68c2b8281e_icgraph" alt=""/></div>
+<map name="a_graph_8c_a98e734940b3c843e7af4fb68c2b8281e_icgraph" id="a_graph_8c_a98e734940b3c843e7af4fb68c2b8281e_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,220,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4081847af97ff9789b0f959b84eabf81" name="a4081847af97ff9789b0f959b84eabf81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4081847af97ff9789b0f959b84eabf81">&#9670;&#160;</a></span>DepthFirstSearchRec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DepthFirstSearchRec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>origem</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dest</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca em Profundidade Recursiva. </p>
+<p>Esta função verifica se existe um caminho entre dois vértices num grafo, utilizando o algoritmo de busca em profundidade (Depth-First Search - DFS) de forma recursiva.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>O apontador para o grafo onde será realizada a busca. </td></tr>
+    <tr><td class="paramname">origem</td><td>O ID do vértice de origem. </td></tr>
+    <tr><td class="paramname">dest</td><td>O ID do vértice de destino. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna true se existir um caminho entre os vértices de origem e destino, false caso contrário. </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>lufer </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a4081847af97ff9789b0f959b84eabf81_cgraph.png" border="0" usemap="#a_graph_8c_a4081847af97ff9789b0f959b84eabf81_cgraph" alt=""/></div>
+<map name="a_graph_8c_a4081847af97ff9789b0f959b84eabf81_cgraph" id="a_graph_8c_a4081847af97ff9789b0f959b84eabf81_cgraph">
+<area shape="rect" title="Busca em Profundidade Recursiva." alt="" coords="5,29,151,56"/>
+<area shape="poly" title=" " alt="" coords="49,30,44,21,47,11,59,5,78,3,98,5,109,12,107,16,97,10,78,8,61,10,51,15,49,20,53,28"/>
+<area shape="rect" href="_graph_8c.html#a028487caf2384c2ecfdceff17f7882eb" title=" " alt="" coords="199,29,296,56"/>
+<area shape="poly" title=" " alt="" coords="151,40,183,40,183,45,151,45"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a4081847af97ff9789b0f959b84eabf81_icgraph.png" border="0" usemap="#a_graph_8c_a4081847af97ff9789b0f959b84eabf81_icgraph" alt=""/></div>
+<map name="a_graph_8c_a4081847af97ff9789b0f959b84eabf81_icgraph" id="a_graph_8c_a4081847af97ff9789b0f959b84eabf81_icgraph">
+<area shape="rect" title="Busca em Profundidade Recursiva." alt="" coords="103,29,248,56"/>
+<area shape="poly" title=" " alt="" coords="199,16,191,10,175,8,161,10,153,14,151,20,155,28,150,30,145,21,149,11,159,5,175,3,193,5,203,12"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="87,45,55,45,55,40,87,40"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad3f38b3acc6073e67c98d734c28d53ec" name="ad3f38b3acc6073e67c98d734c28d53ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f38b3acc6073e67c98d734c28d53ec">&#9670;&#160;</a></span>DestroyGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * DestroyGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destrói um grafo, liberando toda a memória alocada para seus vértices e adjacências.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">G</td><td>Apontador para o grafo a ser destruído. </td></tr>
+    <tr><td class="paramname">res</td><td>Apontador para uma variável bool onde será armazenado o resultado da operação. Será definido como verdadeiro se a destruição for bem-sucedida, ou falso caso contrário. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna NULL após destruir o grafo. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_ad3f38b3acc6073e67c98d734c28d53ec_cgraph.png" border="0" usemap="#a_graph_8c_ad3f38b3acc6073e67c98d734c28d53ec_cgraph" alt=""/></div>
+<map name="a_graph_8c_ad3f38b3acc6073e67c98d734c28d53ec_cgraph" id="a_graph_8c_ad3f38b3acc6073e67c98d734c28d53ec_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a9f762034d290723fa45279a7c482a101" title="Liberta a memória alocada para um nó de adjacência." alt="" coords="155,5,272,32"/>
+<area shape="poly" title=" " alt="" coords="107,16,139,16,139,21,107,21"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_ad3f38b3acc6073e67c98d734c28d53ec_icgraph.png" border="0" usemap="#a_graph_8c_ad3f38b3acc6073e67c98d734c28d53ec_icgraph" alt=""/></div>
+<map name="a_graph_8c_ad3f38b3acc6073e67c98d734c28d53ec_icgraph" id="a_graph_8c_ad3f38b3acc6073e67c98d734c28d53ec_icgraph">
+<area shape="rect" title=" " alt="" coords="244,31,345,57"/>
+<area shape="rect" href="_graph_8c.html#ad70baf45d077821263730f90fe0674d7" title=" " alt="" coords="103,5,196,32"/>
+<area shape="poly" title=" " alt="" coords="228,35,196,29,197,24,229,30"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="228,47,55,47,55,41,228,41"/>
+<area shape="poly" title=" " alt="" coords="88,34,56,41,55,36,87,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afcb87d52692567a0df44de86a63e1580" name="afcb87d52692567a0df44de86a63e1580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb87d52692567a0df44de86a63e1580">&#9670;&#160;</a></span>ExistVertGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExistVertGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idVertice</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Verifica se um vértice com o ID especificado existe em um grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inicio</td><td>O apontador para o início do grafo onde o vértice será procurado. </td></tr>
+    <tr><td class="paramname">idVertice</td><td>O ID do vértice a ser verificado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se o vértice existir no grafo; false caso contrário. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_afcb87d52692567a0df44de86a63e1580_cgraph.png" border="0" usemap="#a_graph_8c_afcb87d52692567a0df44de86a63e1580_cgraph" alt=""/></div>
+<map name="a_graph_8c_afcb87d52692567a0df44de86a63e1580_cgraph" id="a_graph_8c_afcb87d52692567a0df44de86a63e1580_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" href="_vertices_8c.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="164,5,256,32"/>
+<area shape="poly" title=" " alt="" coords="116,16,148,16,148,21,116,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a028487caf2384c2ecfdceff17f7882eb" name="a028487caf2384c2ecfdceff17f7882eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028487caf2384c2ecfdceff17f7882eb">&#9670;&#160;</a></span>FindVerticeId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_node.html">Node</a> * FindVerticeId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>cod</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encontra um vértice em um grafo com base no seu ID.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>O ponteiro para o grafo onde será feita a busca. </td></tr>
+    <tr><td class="paramname">cod</td><td>O ID do vértice a ser encontrado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna um ponteiro para o vértice encontrado, ou NULL se não for encontrado. </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>lufer </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a028487caf2384c2ecfdceff17f7882eb_icgraph.png" border="0" usemap="#a_graph_8c_a028487caf2384c2ecfdceff17f7882eb_icgraph" alt=""/></div>
+<map name="a_graph_8c_a028487caf2384c2ecfdceff17f7882eb_icgraph" id="a_graph_8c_a028487caf2384c2ecfdceff17f7882eb_icgraph">
+<area shape="rect" title=" " alt="" coords="433,60,531,87"/>
+<area shape="rect" href="_graph_8c.html#afe4a609991445ca7e3e26b7be4bab8c3" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="296,29,385,56"/>
+<area shape="poly" title=" " alt="" coords="418,62,385,55,386,50,419,57"/>
+<area shape="rect" href="_graph_8c.html#a4081847af97ff9789b0f959b84eabf81" title="Busca em Profundidade Recursiva." alt="" coords="103,97,248,124"/>
+<area shape="poly" title=" " alt="" coords="419,84,249,104,248,99,418,78"/>
+<area shape="poly" title=" " alt="" coords="364,16,356,10,341,8,326,10,319,14,317,20,321,28,316,30,312,21,315,11,325,5,341,3,358,5,367,12"/>
+<area shape="rect" href="_graph_8c.html#a9e03840147dd6e1d0d6fde9a6f730733" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="107,23,244,49"/>
+<area shape="poly" title=" " alt="" coords="281,43,244,41,244,36,281,38"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,60,55,87"/>
+<area shape="poly" title=" " alt="" coords="107,56,56,70,54,65,106,51"/>
+<area shape="poly" title=" " alt="" coords="106,96,54,82,56,77,107,90"/>
+<area shape="poly" title=" " alt="" coords="199,84,191,78,175,76,161,78,153,82,151,88,155,96,150,98,145,89,149,79,159,73,175,71,193,73,203,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad7ed5f4aa22680572bc8b7bafed8aaa9" name="ad7ed5f4aa22680572bc8b7bafed8aaa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ed5f4aa22680572bc8b7bafed8aaa9">&#9670;&#160;</a></span>ins_vert_adj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * ins_vert_adj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_node2.html">Node2</a> *</td>          <td class="paramname"><span class="paramname"><em>inicio</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>vert</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>adj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insere os vértices e adjacências no grafo com base nos dados fornecidos.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">G</td><td>O grafo onde os vértices e adjacências serão inseridos. </td></tr>
+    <tr><td class="paramname">inicio</td><td>O início da lista de nós representando as adjacências. </td></tr>
+    <tr><td class="paramname">vert</td><td>O número total de vértices. </td></tr>
+    <tr><td class="paramname">adj</td><td>O número total de adjacências. </td></tr>
+    <tr><td class="paramname">res</td><td>Apontador para uma variável bool onde será armazenado o resultado da operação. Será definido como verdadeiro se a inserção for bem-sucedida, ou falso caso contrário. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O grafo atualizado após a inserção dos vértices e adjacências. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_ad7ed5f4aa22680572bc8b7bafed8aaa9_cgraph.png" border="0" usemap="#a_graph_8c_ad7ed5f4aa22680572bc8b7bafed8aaa9_cgraph" alt=""/></div>
+<map name="a_graph_8c_ad7ed5f4aa22680572bc8b7bafed8aaa9_cgraph" id="a_graph_8c_ad7ed5f4aa22680572bc8b7bafed8aaa9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,95,83"/>
+<area shape="rect" href="_vertices_8c.html#aa73902e559feec8c1bb5c69137ed2500" title="Cria um novo vértice com o ID especificado." alt="" coords="150,5,250,32"/>
+<area shape="poly" title=" " alt="" coords="91,53,143,35,145,40,93,58"/>
+<area shape="rect" href="_graph_8c.html#a99e77bd9020f2f99758b2eed82407a08" title=" " alt="" coords="143,56,257,83"/>
+<area shape="poly" title=" " alt="" coords="95,67,127,67,127,72,95,72"/>
+<area shape="rect" href="_graph_8c.html#a603070d5f2a852b70e1ceb0829a544ab" title=" " alt="" coords="144,107,256,133"/>
+<area shape="poly" title=" " alt="" coords="93,81,145,99,143,104,91,86"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a4ca1a27f8ba5388978349cac522cf657" title="Insere uma nova adjacência com o ID de destino especificado na lista de adjacências." alt="" coords="324,5,396,32"/>
+<area shape="poly" title=" " alt="" coords="244,53,308,32,310,37,245,58"/>
+<area shape="rect" href="_vertices_8c.html#a1336c120d301d7a04b4c2cf67b8d4177" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="305,56,415,83"/>
+<area shape="poly" title=" " alt="" coords="258,67,289,67,289,72,258,72"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#aeb98b0286d6bb867abb8f576a3fc328c" title="Cria um novo nó de adjacência com o ID especificado." alt="" coords="463,5,561,32"/>
+<area shape="poly" title=" " alt="" coords="397,16,448,16,448,21,397,21"/>
+<area shape="rect" href="_vertices_8c.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="466,132,558,159"/>
+<area shape="poly" title=" " alt="" coords="257,122,450,138,450,143,256,127"/>
+<area shape="rect" href="_vertices_8c.html#aa28bc5daebfa8f5f181888bbe49a77b6" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="313,157,407,184"/>
+<area shape="poly" title=" " alt="" coords="245,131,302,150,300,155,244,137"/>
+<area shape="poly" title=" " alt="" coords="407,160,450,153,451,158,408,165"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_ad7ed5f4aa22680572bc8b7bafed8aaa9_icgraph.png" border="0" usemap="#a_graph_8c_ad7ed5f4aa22680572bc8b7bafed8aaa9_icgraph" alt=""/></div>
+<map name="a_graph_8c_ad7ed5f4aa22680572bc8b7bafed8aaa9_icgraph" id="a_graph_8c_ad7ed5f4aa22680572bc8b7bafed8aaa9_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,192,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="88,21,55,21,55,16,88,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a99e77bd9020f2f99758b2eed82407a08" name="a99e77bd9020f2f99758b2eed82407a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e77bd9020f2f99758b2eed82407a08">&#9670;&#160;</a></span>InsertAdjaGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * InsertAdjaGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idOrigin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idDestiny</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>peso</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insere uma adjacência entre dois vértices no grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">G</td><td>O grafo no qual a adjacência será inserida. </td></tr>
+    <tr><td class="paramname">idOrigin</td><td>O ID do vértice de origem. </td></tr>
+    <tr><td class="paramname">idDestiny</td><td>O ID do vértice de destino. </td></tr>
+    <tr><td class="paramname">res</td><td>Um apontador para um booleano que indica se a operação foi bem-sucedida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O apontador para o grafo atualizado, ou NULL em caso de erro. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a99e77bd9020f2f99758b2eed82407a08_cgraph.png" border="0" usemap="#a_graph_8c_a99e77bd9020f2f99758b2eed82407a08_cgraph" alt=""/></div>
+<map name="a_graph_8c_a99e77bd9020f2f99758b2eed82407a08_cgraph" id="a_graph_8c_a99e77bd9020f2f99758b2eed82407a08_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,120,57"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a4ca1a27f8ba5388978349cac522cf657" title="Insere uma nova adjacência com o ID de destino especificado na lista de adjacências." alt="" coords="187,5,259,32"/>
+<area shape="poly" title=" " alt="" coords="120,32,171,24,172,29,121,38"/>
+<area shape="rect" href="_vertices_8c.html#a1336c120d301d7a04b4c2cf67b8d4177" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="168,56,278,83"/>
+<area shape="poly" title=" " alt="" coords="121,50,153,56,152,61,120,56"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#aeb98b0286d6bb867abb8f576a3fc328c" title="Cria um novo nó de adjacência com o ID especificado." alt="" coords="326,5,423,32"/>
+<area shape="poly" title=" " alt="" coords="260,16,311,16,311,21,260,21"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a99e77bd9020f2f99758b2eed82407a08_icgraph.png" border="0" usemap="#a_graph_8c_a99e77bd9020f2f99758b2eed82407a08_icgraph" alt=""/></div>
+<map name="a_graph_8c_a99e77bd9020f2f99758b2eed82407a08_icgraph" id="a_graph_8c_a99e77bd9020f2f99758b2eed82407a08_icgraph">
+<area shape="rect" title=" " alt="" coords="240,31,354,57"/>
+<area shape="rect" href="_graph_8c.html#ad7ed5f4aa22680572bc8b7bafed8aaa9" title=" " alt="" coords="103,5,192,32"/>
+<area shape="poly" title=" " alt="" coords="224,34,192,29,193,24,225,29"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="225,47,55,47,55,41,225,41"/>
+<area shape="poly" title=" " alt="" coords="88,34,55,41,54,36,87,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a603070d5f2a852b70e1ceb0829a544ab" name="a603070d5f2a852b70e1ceb0829a544ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603070d5f2a852b70e1ceb0829a544ab">&#9670;&#160;</a></span>InsertVertGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * InsertVertGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>new</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insere um novo vértice no grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">G</td><td>O grafo no qual o vértice será inserido. </td></tr>
+    <tr><td class="paramname">id</td><td>O ID do vértice a ser inserido. </td></tr>
+    <tr><td class="paramname">res</td><td>Um apontador para um inteiro que indica o resultado da operação. Se a operação for bem - sucedida, res deve ser 1. Caso contrário, deve conter um código de erro específico. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O apontador para o grafo atualizado, ou NULL em caso de erro. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a603070d5f2a852b70e1ceb0829a544ab_cgraph.png" border="0" usemap="#a_graph_8c_a603070d5f2a852b70e1ceb0829a544ab_cgraph" alt=""/></div>
+<map name="a_graph_8c_a603070d5f2a852b70e1ceb0829a544ab_cgraph" id="a_graph_8c_a603070d5f2a852b70e1ceb0829a544ab_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,118,32"/>
+<area shape="rect" href="_vertices_8c.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="308,5,400,32"/>
+<area shape="poly" title=" " alt="" coords="118,16,292,16,292,21,118,21"/>
+<area shape="rect" href="_vertices_8c.html#aa28bc5daebfa8f5f181888bbe49a77b6" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="166,31,260,57"/>
+<area shape="poly" title=" " alt="" coords="119,25,151,31,150,36,118,31"/>
+<area shape="poly" title=" " alt="" coords="260,33,292,27,293,32,261,38"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a603070d5f2a852b70e1ceb0829a544ab_icgraph.png" border="0" usemap="#a_graph_8c_a603070d5f2a852b70e1ceb0829a544ab_icgraph" alt=""/></div>
+<map name="a_graph_8c_a603070d5f2a852b70e1ceb0829a544ab_icgraph" id="a_graph_8c_a603070d5f2a852b70e1ceb0829a544ab_icgraph">
+<area shape="rect" title=" " alt="" coords="244,56,356,83"/>
+<area shape="rect" href="_graph_8c.html#ad7ed5f4aa22680572bc8b7bafed8aaa9" title=" " alt="" coords="105,5,194,32"/>
+<area shape="poly" title=" " alt="" coords="243,53,191,35,192,30,245,48"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="228,72,55,72,55,67,228,67"/>
+<area shape="rect" href="_graph_8c.html#ad70baf45d077821263730f90fe0674d7" title=" " alt="" coords="103,107,196,133"/>
+<area shape="poly" title=" " alt="" coords="245,91,192,109,191,104,243,86"/>
+<area shape="poly" title=" " alt="" coords="103,41,56,61,54,57,101,36"/>
+<area shape="poly" title=" " alt="" coords="101,103,54,82,56,77,103,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad70baf45d077821263730f90fe0674d7" name="ad70baf45d077821263730f90fe0674d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70baf45d077821263730f90fe0674d7">&#9670;&#160;</a></span>LoadGraphB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * LoadGraphB </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>ficheiro</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>resultado</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carrega um grafo de um ficheiro binário.</p>
+<p>Esta função carrega os dados de um grafo a partir de um ficheiro binário.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ficheiro</td><td>O nome do ficheiro a ser lido. </td></tr>
+    <tr><td class="paramname">resultado</td><td>Apontador para uma variável bool onde será armazenado o resultado da operação. Será definido como verdadeiro se a operação for bem-sucedida, ou falso caso contrário. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna um apontador para o grafo carregado, ou NULL se a operação falhar. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_ad70baf45d077821263730f90fe0674d7_cgraph.png" border="0" usemap="#a_graph_8c_ad70baf45d077821263730f90fe0674d7_cgraph" alt=""/></div>
+<map name="a_graph_8c_ad70baf45d077821263730f90fe0674d7_cgraph" id="a_graph_8c_ad70baf45d077821263730f90fe0674d7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,99,83"/>
+<area shape="rect" href="_graph_8c.html#ad3f38b3acc6073e67c98d734c28d53ec" title=" " alt="" coords="152,5,254,32"/>
+<area shape="poly" title=" " alt="" coords="93,53,146,35,147,40,95,58"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a4ca1a27f8ba5388978349cac522cf657" title="Insere uma nova adjacência com o ID de destino especificado na lista de adjacências." alt="" coords="167,56,239,83"/>
+<area shape="poly" title=" " alt="" coords="99,67,151,67,151,72,99,72"/>
+<area shape="rect" href="_graph_8c.html#a603070d5f2a852b70e1ceb0829a544ab" title=" " alt="" coords="147,107,259,133"/>
+<area shape="poly" title=" " alt="" coords="95,81,147,99,146,104,93,86"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#a9f762034d290723fa45279a7c482a101" title="Liberta a memória alocada para um nó de adjacência." alt="" coords="307,5,424,32"/>
+<area shape="poly" title=" " alt="" coords="254,16,291,16,291,21,254,21"/>
+<area shape="rect" href="_vertices_adjacent_8c.html#aeb98b0286d6bb867abb8f576a3fc328c" title="Cria um novo nó de adjacência com o ID especificado." alt="" coords="317,56,414,83"/>
+<area shape="poly" title=" " alt="" coords="239,67,302,67,302,72,239,72"/>
+<area shape="rect" href="_vertices_8c.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="472,132,565,159"/>
+<area shape="poly" title=" " alt="" coords="260,122,457,138,457,143,259,127"/>
+<area shape="rect" href="_vertices_8c.html#aa28bc5daebfa8f5f181888bbe49a77b6" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="319,157,413,184"/>
+<area shape="poly" title=" " alt="" coords="249,131,307,150,305,155,248,137"/>
+<area shape="poly" title=" " alt="" coords="413,160,457,153,457,158,414,165"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_ad70baf45d077821263730f90fe0674d7_icgraph.png" border="0" usemap="#a_graph_8c_ad70baf45d077821263730f90fe0674d7_icgraph" alt=""/></div>
+<map name="a_graph_8c_ad70baf45d077821263730f90fe0674d7_icgraph" id="a_graph_8c_ad70baf45d077821263730f90fe0674d7_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,196,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a726964328a14a01af3a6729c01250bfc" name="a726964328a14a01af3a6729c01250bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726964328a14a01af3a6729c01250bfc">&#9670;&#160;</a></span>ResetVerticesVisitados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * ResetVerticesVisitados </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Limpa o estado "visitado" de todos os vértices do grafo. </p>
+<p>Esta função percorre todos os vértices do grafo e define o estado "visitado" de cada vértice como falso.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>O ponteiro para o grafo onde o estado "visitado" será limpo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna um ponteiro para o grafo modificado. </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>lufer </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a726964328a14a01af3a6729c01250bfc_icgraph.png" border="0" usemap="#a_graph_8c_a726964328a14a01af3a6729c01250bfc_icgraph" alt=""/></div>
+<map name="a_graph_8c_a726964328a14a01af3a6729c01250bfc_icgraph" id="a_graph_8c_a726964328a14a01af3a6729c01250bfc_icgraph">
+<area shape="rect" title="Limpa o estado &quot;visitado&quot; de todos os vértices do grafo." alt="" coords="288,31,445,57"/>
+<area shape="rect" href="_graph_8c.html#a9e03840147dd6e1d0d6fde9a6f730733" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="103,5,240,32"/>
+<area shape="poly" title=" " alt="" coords="272,34,240,30,241,25,273,29"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="273,47,55,47,55,41,273,41"/>
+<area shape="poly" title=" " alt="" coords="88,36,55,42,54,37,87,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a656b3ba16c40adb47128425bacc9a724" name="a656b3ba16c40adb47128425bacc9a724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656b3ba16c40adb47128425bacc9a724">&#9670;&#160;</a></span>SaveGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SaveGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Salva um grafo num ficheiro binário.</p>
+<p>Esta função salva os dados de um grafo, incluindo seus vértices e arestas, em um ficheiro binário.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">G</td><td>O apontador para o grafo a ser salvo. </td></tr>
+    <tr><td class="paramname">fileName</td><td>O nome do ficheiro onde o grafo será salvo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se a operação for bem-sucedida, -1 se o grafo fornecido for nulo, e -2 se houver um erro ao abrir o arquivo. </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a656b3ba16c40adb47128425bacc9a724_icgraph.png" border="0" usemap="#a_graph_8c_a656b3ba16c40adb47128425bacc9a724_icgraph" alt=""/></div>
+<map name="a_graph_8c_a656b3ba16c40adb47128425bacc9a724_icgraph" id="a_graph_8c_a656b3ba16c40adb47128425bacc9a724_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,187,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4ea9d05dfeb219cf833d3c77b91e59df" name="a4ea9d05dfeb219cf833d3c77b91e59df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea9d05dfeb219cf833d3c77b91e59df">&#9670;&#160;</a></span>ShowAllPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShowAllPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_best.html">Best</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mostra todos os caminhos mais curtos a partir de um vértice inicial. </p>
+<p>Este programa imprime todos os caminhos mais curtos a partir de um vértice inicial, usando as informações fornecidas pela estrutura <code><a class="el" href="struct_best.html" title="Estrutura para armazenar o melhor caminho.">Best</a></code>, que contém os caminhos mais curtos e os vértices predecessores para cada vértice no grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>A estrutura <code><a class="el" href="struct_best.html" title="Estrutura para armazenar o melhor caminho.">Best</a></code> contendo os caminhos mais curtos e os vértices predecessores. </td></tr>
+    <tr><td class="paramname">n</td><td>O número total de vértices no grafo. </td></tr>
+    <tr><td class="paramname">v</td><td>O vértice inicial a partir do qual os caminhos serão mostrados. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Void (sem retorno). </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_a4ea9d05dfeb219cf833d3c77b91e59df_icgraph.png" border="0" usemap="#a_graph_8c_a4ea9d05dfeb219cf833d3c77b91e59df_icgraph" alt=""/></div>
+<map name="a_graph_8c_a4ea9d05dfeb219cf833d3c77b91e59df_icgraph" id="a_graph_8c_a4ea9d05dfeb219cf833d3c77b91e59df_icgraph">
+<area shape="rect" title="Mostra todos os caminhos mais curtos a partir de um vértice inicial." alt="" coords="103,5,198,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa97298e9038c847371a8d020189922ea" name="aa97298e9038c847371a8d020189922ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97298e9038c847371a8d020189922ea">&#9670;&#160;</a></span>ShowGraph2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ShowGraph2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>Gr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mostra o grafo, exibindo todos os vértices e suas adjacências.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Gr</td><td>O ponteiro para o grafo a ser mostrado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true se o grafo foi mostrado com sucesso; false caso contrário. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_aa97298e9038c847371a8d020189922ea_cgraph.png" border="0" usemap="#a_graph_8c_aa97298e9038c847371a8d020189922ea_cgraph" alt=""/></div>
+<map name="a_graph_8c_aa97298e9038c847371a8d020189922ea_cgraph" id="a_graph_8c_aa97298e9038c847371a8d020189922ea_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,101,32"/>
+<area shape="rect" href="_vertices_8c.html#a6cbd3bc7e4a97f7074be477c41144972" title="Mostra os vértices e suas adjacências no grafo." alt="" coords="149,5,237,32"/>
+<area shape="poly" title=" " alt="" coords="101,16,133,16,133,21,101,21"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_aa97298e9038c847371a8d020189922ea_icgraph.png" border="0" usemap="#a_graph_8c_aa97298e9038c847371a8d020189922ea_icgraph" alt=""/></div>
+<map name="a_graph_8c_aa97298e9038c847371a8d020189922ea_icgraph" id="a_graph_8c_aa97298e9038c847371a8d020189922ea_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,198,32"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ade720421e8269dbe12bf6e14c3fa47ff" name="ade720421e8269dbe12bf6e14c3fa47ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade720421e8269dbe12bf6e14c3fa47ff">&#9670;&#160;</a></span>WhereIsVertGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_graph.html">Graph</a> * WhereIsVertGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_graph.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idVertice</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encontra um vértice com o ID especificado em um grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">G</td><td>O apontador para o grafo onde o vértice será procurado. </td></tr>
+    <tr><td class="paramname">idVertice</td><td>O ID do vértice a ser encontrado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Um apontador para o vértice encontrado, se existir; NULL caso contrário. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_graph_8c_ade720421e8269dbe12bf6e14c3fa47ff_cgraph.png" border="0" usemap="#a_graph_8c_ade720421e8269dbe12bf6e14c3fa47ff_cgraph" alt=""/></div>
+<map name="a_graph_8c_ade720421e8269dbe12bf6e14c3fa47ff_cgraph" id="a_graph_8c_ade720421e8269dbe12bf6e14c3fa47ff_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,134,32"/>
+<area shape="rect" href="_vertices_8c.html#a1336c120d301d7a04b4c2cf67b8d4177" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="182,5,292,32"/>
+<area shape="poly" title=" " alt="" coords="134,16,166,16,166,21,134,21"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

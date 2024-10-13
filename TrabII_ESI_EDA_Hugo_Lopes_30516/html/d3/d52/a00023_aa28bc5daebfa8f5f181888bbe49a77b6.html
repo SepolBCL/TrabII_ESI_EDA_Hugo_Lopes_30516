@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho Prático de Estruturas de Dados Avançados: InsertVertice</title>
+<link rel="icon" href="../../Captura de ecrã 2024-05-25 005639.png" type="image/x-icon" />
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../Captura de ecrã 2024-05-25 005608.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Trabalho Prático de Estruturas de Dados Avançados<span id="projectnumber">&#160;001</span>
+   </div>
+   <div id="projectbrief">Fase II - Grafos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/d52/a00023.html">Vertices.h</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="contents">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+   <td valign="top">
+      <div class="navtab">
+        <table>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_af08ec37a8c99d747fb60fa15bc28678b.html#af08ec37a8c99d747fb60fa15bc28678b">_CRT_SECURE_NO_WARNINGS</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_aa73902e559feec8c1bb5c69137ed2500.html#aa73902e559feec8c1bb5c69137ed2500">CreateVertice</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_a36c11fed31d504edb16338c508f03b26.html#a36c11fed31d504edb16338c508f03b26">DeleteAllAdjVert</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_a71070216b78aa3bc49e32755f0ce4213.html#a71070216b78aa3bc49e32755f0ce4213">DeleteVertice</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_a108c36b33043240c00fabb2a396c4fd9.html#a108c36b33043240c00fabb2a396c4fd9">DestroiVertice</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_a269580c763396e6049df5d42fc3e1dd0.html#a269580c763396e6049df5d42fc3e1dd0">ExistVertice</a></td></tr>
+          <tr><td class="navtabHL"><a class="navtab" href="../../d3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6.html#aa28bc5daebfa8f5f181888bbe49a77b6">InsertVertice</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_a3b09f37e675bcd48a01bf22155996872.html#a3b09f37e675bcd48a01bf22155996872">Node</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_a6cbd3bc7e4a97f7074be477c41144972.html#a6cbd3bc7e4a97f7074be477c41144972">ShowGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_a23eb92fd11f6f00cb88b0a6e2197a92f.html#a23eb92fd11f6f00cb88b0a6e2197a92f">VRT</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d3/d52/a00023_a1336c120d301d7a04b4c2cf67b8d4177.html#a1336c120d301d7a04b4c2cf67b8d4177">WhereIsVertice</a></td></tr>
+        </table>
+      </div>
+   </td>
+   <td valign="top" class="mempage">
+<a id="aa28bc5daebfa8f5f181888bbe49a77b6" name="aa28bc5daebfa8f5f181888bbe49a77b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa28bc5daebfa8f5f181888bbe49a77b6">&#9670;&#160;</a></span>InsertVertice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d6d/a00055.html">Node</a> * InsertVertice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d6d/a00055.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d6d/a00055.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>novo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um novo vértice numa lista ligada de vértices. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertices</td><td>O apontador para o início da lista de vértices. </td></tr>
+    <tr><td class="paramname">novo</td><td>O apontador para o novo vértice a ser inserido. </td></tr>
+    <tr><td class="paramname">res</td><td>O apontador para uma variável que armazenará o resultado da operação. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O apontador atualizado para o início da lista de vértices. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6_aa28bc5daebfa8f5f181888bbe49a77b6_cgraph.png" border="0" usemap="#ad3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6_aa28bc5daebfa8f5f181888bbe49a77b6_cgraph" alt=""/></div>
+<map name="ad3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6_aa28bc5daebfa8f5f181888bbe49a77b6_cgraph" id="ad3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6_aa28bc5daebfa8f5f181888bbe49a77b6_cgraph">
+<area shape="rect" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="5,5,100,32"/>
+<area shape="rect" href="../../db/db2/a00020_ab1d21034485a716467af25abb6266596.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="148,5,240,32"/>
+<area shape="poly" title=" " alt="" coords="100,16,132,16,132,21,100,21"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6_aa28bc5daebfa8f5f181888bbe49a77b6_icgraph.png" border="0" usemap="#ad3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6_aa28bc5daebfa8f5f181888bbe49a77b6_icgraph" alt=""/></div>
+<map name="ad3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6_aa28bc5daebfa8f5f181888bbe49a77b6_icgraph" id="ad3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6_aa28bc5daebfa8f5f181888bbe49a77b6_icgraph">
+<area shape="rect" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="404,31,499,57"/>
+<area shape="rect" href="../../d7/d46/a00002_a603070d5f2a852b70e1ceb0829a544ab.html#a603070d5f2a852b70e1ceb0829a544ab" title=" " alt="" coords="244,31,356,57"/>
+<area shape="poly" title=" " alt="" coords="389,47,357,47,357,41,389,41"/>
+<area shape="rect" href="../../d7/d46/a00002_ad7ed5f4aa22680572bc8b7bafed8aaa9.html#ad7ed5f4aa22680572bc8b7bafed8aaa9" title=" " alt="" coords="105,5,194,32"/>
+<area shape="poly" title=" " alt="" coords="228,35,194,29,195,24,229,29"/>
+<area shape="rect" href="../../d7/d46/a00002_ad70baf45d077821263730f90fe0674d7.html#ad70baf45d077821263730f90fe0674d7" title=" " alt="" coords="103,56,196,83"/>
+<area shape="poly" title=" " alt="" coords="229,59,197,64,196,59,228,53"/>
+<area shape="rect" href="../../d2/de7/a00014_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="89,21,55,21,55,16,89,16"/>
+</map>
+</div>
+
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho Prático de Estruturas de Dados Avançados: DeleteAdjGraph</title>
+<link rel="icon" href="../../Captura de ecrã 2024-05-25 005639.png" type="image/x-icon" />
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../Captura de ecrã 2024-05-25 005608.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Trabalho Prático de Estruturas de Dados Avançados<span id="projectnumber">&#160;001</span>
+   </div>
+   <div id="projectbrief">Fase II - Grafos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d7/d46/a00002.html">Graph.c</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="contents">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+   <td valign="top">
+      <div class="navtab">
+        <table>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a2c9f3a4f1a421a152837221f4d7f9f1a.html#a2c9f3a4f1a421a152837221f4d7f9f1a">BestPath</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_afe4a609991445ca7e3e26b7be4bab8c3.html#afe4a609991445ca7e3e26b7be4bab8c3">CountPaths</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a9e03840147dd6e1d0d6fde9a6f730733.html#a9e03840147dd6e1d0d6fde9a6f730733">CountPathsVertices</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a385294e5113408793f93ce8174a616ec.html#a385294e5113408793f93ce8174a616ec">CreateGraph</a></td></tr>
+          <tr><td class="navtabHL"><a class="navtab" href="../../d7/d46/a00002_aad8e2487e53495fa613603d657feb83e.html#aad8e2487e53495fa613603d657feb83e">DeleteAdjGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a98e734940b3c843e7af4fb68c2b8281e.html#a98e734940b3c843e7af4fb68c2b8281e">DeleteVertGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a4081847af97ff9789b0f959b84eabf81.html#a4081847af97ff9789b0f959b84eabf81">DepthFirstSearchRec</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_ad3f38b3acc6073e67c98d734c28d53ec.html#ad3f38b3acc6073e67c98d734c28d53ec">DestroyGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_afcb87d52692567a0df44de86a63e1580.html#afcb87d52692567a0df44de86a63e1580">ExistVertGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a028487caf2384c2ecfdceff17f7882eb.html#a028487caf2384c2ecfdceff17f7882eb">FindVerticeId</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_ad7ed5f4aa22680572bc8b7bafed8aaa9.html#ad7ed5f4aa22680572bc8b7bafed8aaa9">ins_vert_adj</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a99e77bd9020f2f99758b2eed82407a08.html#a99e77bd9020f2f99758b2eed82407a08">InsertAdjaGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a603070d5f2a852b70e1ceb0829a544ab.html#a603070d5f2a852b70e1ceb0829a544ab">InsertVertGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_ad70baf45d077821263730f90fe0674d7.html#ad70baf45d077821263730f90fe0674d7">LoadGraphB</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a726964328a14a01af3a6729c01250bfc.html#a726964328a14a01af3a6729c01250bfc">ResetVerticesVisitados</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a656b3ba16c40adb47128425bacc9a724.html#a656b3ba16c40adb47128425bacc9a724">SaveGraph</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_a4ea9d05dfeb219cf833d3c77b91e59df.html#a4ea9d05dfeb219cf833d3c77b91e59df">ShowAllPath</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_aa97298e9038c847371a8d020189922ea.html#aa97298e9038c847371a8d020189922ea">ShowGraph2</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="../../d7/d46/a00002_ade720421e8269dbe12bf6e14c3fa47ff.html#ade720421e8269dbe12bf6e14c3fa47ff">WhereIsVertGraph</a></td></tr>
+        </table>
+      </div>
+   </td>
+   <td valign="top" class="mempage">
+<a id="aad8e2487e53495fa613603d657feb83e" name="aad8e2487e53495fa613603d657feb83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad8e2487e53495fa613603d657feb83e">&#9670;&#160;</a></span>DeleteAdjGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d42/a00043.html">Graph</a> * DeleteAdjGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d42/a00043.html">Graph</a> *</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>destiny</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove uma adjacência entre dois vértices no grafo.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">G</td><td>O grafo no qual a adjacência será removida. </td></tr>
+    <tr><td class="paramname">origin</td><td>O ID do vértice de origem. </td></tr>
+    <tr><td class="paramname">destiny</td><td>O ID do vértice de destino. </td></tr>
+    <tr><td class="paramname">res</td><td>Um apontador para um booleano que indica se a operação foi bem-sucedida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O apontador para o grafo atualizado, ou NULL em caso de erro. </dd></dl>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d46/a00002_aad8e2487e53495fa613603d657feb83e_aad8e2487e53495fa613603d657feb83e_cgraph.png" border="0" usemap="#ad7/d46/a00002_aad8e2487e53495fa613603d657feb83e_aad8e2487e53495fa613603d657feb83e_cgraph" alt=""/></div>
+<map name="ad7/d46/a00002_aad8e2487e53495fa613603d657feb83e_aad8e2487e53495fa613603d657feb83e_cgraph" id="ad7/d46/a00002_aad8e2487e53495fa613603d657feb83e_aad8e2487e53495fa613603d657feb83e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,118,57"/>
+<area shape="rect" href="../../d6/d5b/a00026_a78dc3cd9c4e888f1c433a3774f6a430c.html#a78dc3cd9c4e888f1c433a3774f6a430c" title="Remove um nó de adjacência com o código especificado de uma lista ligada de adjacências." alt="" coords="182,5,260,32"/>
+<area shape="poly" title=" " alt="" coords="118,32,166,25,167,30,118,38"/>
+<area shape="rect" href="../../db/db2/a00020_a1336c120d301d7a04b4c2cf67b8d4177.html#a1336c120d301d7a04b4c2cf67b8d4177" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="166,56,276,83"/>
+<area shape="poly" title=" " alt="" coords="118,50,151,56,150,61,118,56"/>
+</map>
+</div>
+
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

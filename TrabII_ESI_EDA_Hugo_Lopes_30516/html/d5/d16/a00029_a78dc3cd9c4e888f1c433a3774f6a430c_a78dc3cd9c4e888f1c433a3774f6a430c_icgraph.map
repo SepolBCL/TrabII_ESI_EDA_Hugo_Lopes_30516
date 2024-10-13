@@ -1,0 +1,9 @@
+<map id="DeleteAdj" name="DeleteAdj">
+<area shape="rect" id="Node000001" title="Remove um nó de adjacência com o código especificado de uma lista ligada de adjacências." alt="" coords="335,31,412,57"/>
+<area shape="rect" id="Node000002" href="$d7/d46/a00002_aad8e2487e53495fa613603d657feb83e.html#aad8e2487e53495fa613603d657feb83e" title=" " alt="" coords="173,5,285,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,37,285,31,286,26,320,32"/>
+<area shape="rect" id="Node000003" href="$db/db2/a00020_a36c11fed31d504edb16338c508f03b26.html#a36c11fed31d504edb16338c508f03b26" title="Remove todas as adjacências com o código especificado de todos os vértices numa lista ligada de vérti..." alt="" coords="171,56,287,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="320,56,288,62,287,57,319,51"/>
+<area shape="rect" id="Node000004" href="$d7/d46/a00002_a98e734940b3c843e7af4fb68c2b8281e.html#a98e734940b3c843e7af4fb68c2b8281e" title=" " alt="" coords="5,56,123,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,72,123,72,123,67,155,67"/>
+</map>

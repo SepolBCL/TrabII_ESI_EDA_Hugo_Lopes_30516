@@ -1,0 +1,18 @@
+<map id="LoadGraphB" name="LoadGraphB">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,99,83"/>
+<area shape="rect" id="Node000002" href="$d7/d46/a00002_ad3f38b3acc6073e67c98d734c28d53ec.html#ad3f38b3acc6073e67c98d734c28d53ec" title=" " alt="" coords="152,5,254,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,53,146,35,147,40,95,58"/>
+<area shape="rect" id="Node000004" href="$d6/d5b/a00026_a4ca1a27f8ba5388978349cac522cf657.html#a4ca1a27f8ba5388978349cac522cf657" title="Insere uma nova adjacência com o ID de destino especificado na lista de adjacências." alt="" coords="167,56,239,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="99,67,151,67,151,72,99,72"/>
+<area shape="rect" id="Node000006" href="$d7/d46/a00002_a603070d5f2a852b70e1ceb0829a544ab.html#a603070d5f2a852b70e1ceb0829a544ab" title=" " alt="" coords="147,107,259,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="95,81,147,99,146,104,93,86"/>
+<area shape="rect" id="Node000003" href="$d6/d5b/a00026_a9f762034d290723fa45279a7c482a101.html#a9f762034d290723fa45279a7c482a101" title="Liberta a memória alocada para um nó de adjacência." alt="" coords="307,5,424,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="254,16,291,16,291,21,254,21"/>
+<area shape="rect" id="Node000005" href="$d6/d5b/a00026_aeb98b0286d6bb867abb8f576a3fc328c.html#aeb98b0286d6bb867abb8f576a3fc328c" title="Cria um novo nó de adjacência com o ID especificado." alt="" coords="317,56,414,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,67,302,67,302,72,239,72"/>
+<area shape="rect" id="Node000007" href="$db/db2/a00020_ab1d21034485a716467af25abb6266596.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="472,132,565,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="260,122,457,138,457,143,259,127"/>
+<area shape="rect" id="Node000008" href="$db/db2/a00020_aa28bc5daebfa8f5f181888bbe49a77b6.html#aa28bc5daebfa8f5f181888bbe49a77b6" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="319,157,413,184"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="249,131,307,150,305,155,248,137"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="413,160,457,153,457,158,414,165"/>
+</map>

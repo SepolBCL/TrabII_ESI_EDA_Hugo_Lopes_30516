@@ -1,0 +1,5 @@
+<map id="WhereIsVertGraph" name="WhereIsVertGraph">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,134,32"/>
+<area shape="rect" id="Node000002" href="$db/db2/a00020_a1336c120d301d7a04b4c2cf67b8d4177.html#a1336c120d301d7a04b4c2cf67b8d4177" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="182,5,292,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,16,166,16,166,21,134,21"/>
+</map>

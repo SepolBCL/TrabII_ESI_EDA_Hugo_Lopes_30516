@@ -1,0 +1,25 @@
+<map id="VerticesAdjacent.h" name="VerticesAdjacent.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="127,5,258,32"/>
+<area shape="rect" id="Node000002" href="$d7/d46/a00002.html" title="Implementação das funções relacionadas a grafos." alt="" coords="5,229,73,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,41,118,59,92,82,68,119,54,161,46,200,42,229,37,229,40,199,48,160,63,117,88,78,114,54,144,37"/>
+<area shape="rect" id="Node000003" href="$dd/dad/a00005.html" title="Definições das estruturas e protótipos das funções relacionadas a grafos." alt="" coords="81,155,149,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,45,143,81,127,121,120,155,114,154,122,119,138,79,166,42"/>
+<area shape="rect" id="Node000004" href="$d4/dee/a00008.html" title=" " alt="" coords="97,229,141,256"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="163,44,138,64,112,90,88,121,72,156,69,168,72,180,87,206,106,227,102,231,83,210,67,182,64,168,67,154,84,118,108,87,134,60,159,39"/>
+<area shape="rect" id="Node000005" href="$d2/de7/a00014.html" title="Programa principal." alt="" coords="206,229,267,256"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="237,37,271,56,308,82,342,115,368,154,372,171,368,186,358,199,343,210,305,227,268,238,266,233,303,222,340,205,354,195,363,183,367,170,363,156,338,118,305,86,268,61,234,41"/>
+<area shape="rect" id="Node000006" href="$db/db2/a00020.html" title="Definição das funções relacionadas a vértices." alt="" coords="274,155,354,181"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="215,42,246,78,306,153,302,156,242,82,211,45"/>
+<area shape="rect" id="Node000007" href="$d3/d52/a00023.html" title="Definições das estruturas e protótipos das funções relacionadas a vértices." alt="" coords="152,80,233,107"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="195,48,195,80,190,80,190,48"/>
+<area shape="rect" id="Node000008" href="$d6/d5b/a00026.html" title="Definição das funções relacionadas a vértices adjacentes." alt="" coords="428,80,559,107"/>
+<area shape="poly" id="edge14_Node000001_Node000008" title=" " alt="" coords="261,34,442,77,440,82,259,39"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="93,194,54,231,50,227,89,190"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="119,197,121,229,116,229,114,197"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="150,187,216,226,214,231,148,192"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="139,113,103,131,72,156,60,174,51,194,43,230,38,229,46,192,55,172,68,153,100,126,137,108"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="170,119,130,156,126,152,166,116"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="187,122,163,183,131,231,127,228,158,180,182,120"/>
+<area shape="poly" id="edge13_Node000007_Node000005" title=" " alt="" coords="203,121,235,228,230,230,198,123"/>
+<area shape="poly" id="edge12_Node000007_Node000006" title=" " alt="" coords="228,113,294,152,291,156,225,117"/>
+</map>

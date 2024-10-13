@@ -1,0 +1,13 @@
+<map id="WhereIsVertice" name="WhereIsVertice">
+<area shape="rect" id="Node000001" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="416,56,527,83"/>
+<area shape="rect" id="Node000002" href="$d7/d46/a00002_aad8e2487e53495fa613603d657feb83e.html#aad8e2487e53495fa613603d657feb83e" title=" " alt="" coords="248,5,360,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="409,53,350,35,352,30,411,48"/>
+<area shape="rect" id="Node000003" href="$d7/d46/a00002_a99e77bd9020f2f99758b2eed82407a08.html#a99e77bd9020f2f99758b2eed82407a08" title=" " alt="" coords="247,56,361,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="401,72,362,72,362,67,401,67"/>
+<area shape="rect" id="Node000006" href="$d7/d46/a00002_ade720421e8269dbe12bf6e14c3fa47ff.html#ade720421e8269dbe12bf6e14c3fa47ff" title=" " alt="" coords="240,107,368,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="411,90,352,109,350,104,409,85"/>
+<area shape="rect" id="Node000004" href="$d7/d46/a00002_ad7ed5f4aa22680572bc8b7bafed8aaa9.html#ad7ed5f4aa22680572bc8b7bafed8aaa9" title=" " alt="" coords="103,56,192,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="232,72,192,72,192,67,232,67"/>
+<area shape="rect" id="Node000005" href="$d2/de7/a00014_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="88,72,55,72,55,67,88,67"/>
+</map>

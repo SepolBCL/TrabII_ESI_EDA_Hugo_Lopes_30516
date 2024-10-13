@@ -1,0 +1,5 @@
+<map id="InsertVertice" name="InsertVertice">
+<area shape="rect" id="Node000001" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="5,5,100,32"/>
+<area shape="rect" id="Node000002" href="$db/db2/a00020_ab1d21034485a716467af25abb6266596.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="148,5,240,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,16,132,16,132,21,100,21"/>
+</map>

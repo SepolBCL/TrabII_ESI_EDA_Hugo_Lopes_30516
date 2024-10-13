@@ -1,0 +1,9 @@
+<map id="DeleteVertice" name="DeleteVertice">
+<area shape="rect" id="Node000001" title="Remove um vértice com o código especificado de uma lista ligada de vértices." alt="" coords="5,31,105,57"/>
+<area shape="rect" id="Node000002" href="$_vertices_adjacent_8c.html#a785cb3dfbc28d08973ee247ecd7a6332" title="Remove todos os nós de adjacência de uma lista ligada de adjacências." alt="" coords="158,5,251,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,33,142,26,143,32,106,38"/>
+<area shape="rect" id="Node000004" href="$_vertices_8c.html#a108c36b33043240c00fabb2a396c4fd9" title="Liberta a memória alocada para um vértice." alt="" coords="153,56,256,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="106,50,138,55,137,61,105,55"/>
+<area shape="rect" id="Node000003" href="$_vertices_adjacent_8c.html#a9f762034d290723fa45279a7c482a101" title="Liberta a memória alocada para um nó de adjacência." alt="" coords="304,5,421,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,16,288,16,288,21,251,21"/>
+</map>

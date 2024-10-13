@@ -1,0 +1,44 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,183,55,209"/>
+<area shape="rect" id="Node000002" href="$d7/d46/a00002_a2c9f3a4f1a421a152837221f4d7f9f1a.html#a2c9f3a4f1a421a152837221f4d7f9f1a" title="Algoritmo de Dijkstra." alt="" coords="144,5,219,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,181,39,152,52,115,72,76,101,42,127,27,130,31,104,46,77,79,57,117,44,154,37,183"/>
+<area shape="rect" id="Node000003" href="$d7/d46/a00002_a385294e5113408793f93ce8174a616ec.html#a385294e5113408793f93ce8174a616ec" title=" " alt="" coords="134,56,229,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="35,181,60,138,79,113,101,93,118,82,121,87,104,97,82,117,64,140,40,183"/>
+<area shape="rect" id="Node000004" href="$d7/d46/a00002_ad3f38b3acc6073e67c98d734c28d53ec.html#ad3f38b3acc6073e67c98d734c28d53ec" title=" " alt="" coords="131,107,232,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="46,180,71,161,101,143,115,137,117,142,104,148,74,166,49,185"/>
+<area shape="rect" id="Node000006" href="$d7/d46/a00002_ad7ed5f4aa22680572bc8b7bafed8aaa9.html#ad7ed5f4aa22680572bc8b7bafed8aaa9" title=" " alt="" coords="137,157,226,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="55,189,121,178,122,183,56,195"/>
+<area shape="rect" id="Node000015" href="$d4/dee/a00008_af75ee7ec569bdea5f99db51774ff00a7.html#af75ee7ec569bdea5f99db51774ff00a7" title=" " alt="" coords="148,208,215,235"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="56,197,133,211,132,216,55,203"/>
+<area shape="rect" id="Node000018" href="$d7/d46/a00002_a726964328a14a01af3a6729c01250bfc.html#a726964328a14a01af3a6729c01250bfc" title="Limpa o estado &quot;visitado&quot; de todos os vértices do grafo." alt="" coords="103,259,260,285"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="49,207,74,226,104,244,117,250,115,255,101,249,71,231,46,212"/>
+<area shape="rect" id="Node000019" href="$d7/d46/a00002_a4ea9d05dfeb219cf833d3c77b91e59df.html#a4ea9d05dfeb219cf833d3c77b91e59df" title="Mostra todos os caminhos mais longos a partir de um vértice inicial." alt="" coords="134,309,229,336"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="40,209,64,252,82,275,104,295,121,305,118,309,101,299,79,279,60,254,35,211"/>
+<area shape="rect" id="Node000020" href="$d7/d46/a00002_aa97298e9038c847371a8d020189922ea.html#aa97298e9038c847371a8d020189922ea" title=" " alt="" coords="134,360,229,387"/>
+<area shape="poly" id="edge20_Node000001_Node000020" title=" " alt="" coords="37,209,44,238,57,275,77,313,104,346,120,357,117,361,101,350,72,316,52,277,39,240,31,211"/>
+<area shape="rect" id="Node000005" href="$d6/d5b/a00026_a9f762034d290723fa45279a7c482a101.html#a9f762034d290723fa45279a7c482a101" title="Liberta a memória alocada para um nó de adjacência." alt="" coords="308,31,425,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="228,104,259,92,307,67,318,62,320,66,309,72,261,97,230,109"/>
+<area shape="rect" id="Node000007" href="$db/db2/a00020_aa73902e559feec8c1bb5c69137ed2500.html#aa73902e559feec8c1bb5c69137ed2500" title="Cria um novo vértice com o ID especificado." alt="" coords="317,81,417,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="226,155,259,143,307,118,318,112,320,117,309,122,261,148,227,160"/>
+<area shape="rect" id="Node000008" href="$d7/d46/a00002_a99e77bd9020f2f99758b2eed82407a08.html#a99e77bd9020f2f99758b2eed82407a08" title=" " alt="" coords="310,132,424,159"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="226,162,294,153,295,158,227,167"/>
+<area shape="rect" id="Node000012" href="$d7/d46/a00002_a603070d5f2a852b70e1ceb0829a544ab.html#a603070d5f2a852b70e1ceb0829a544ab" title=" " alt="" coords="311,183,423,209"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="227,174,296,184,295,189,226,179"/>
+<area shape="rect" id="Node000009" href="$d6/d5b/a00026_a4ca1a27f8ba5388978349cac522cf657.html#a4ca1a27f8ba5388978349cac522cf657" title="Insere uma nova adjacência com o ID de destino especificado na lista de adjacências." alt="" coords="492,81,565,108"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="411,129,477,108,478,113,413,134"/>
+<area shape="rect" id="Node000011" href="$db/db2/a00020_a1336c120d301d7a04b4c2cf67b8d4177.html#a1336c120d301d7a04b4c2cf67b8d4177" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="473,132,584,159"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="424,143,458,143,458,148,424,148"/>
+<area shape="rect" id="Node000010" href="$d6/d5b/a00026_aeb98b0286d6bb867abb8f576a3fc328c.html#aeb98b0286d6bb867abb8f576a3fc328c" title="Cria um novo nó de adjacência com o ID especificado." alt="" coords="632,81,729,108"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="565,92,616,92,616,97,565,97"/>
+<area shape="rect" id="Node000013" href="$db/db2/a00020_ab1d21034485a716467af25abb6266596.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="634,208,727,235"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="423,198,619,214,618,219,423,203"/>
+<area shape="rect" id="Node000014" href="$db/db2/a00020_aa28bc5daebfa8f5f181888bbe49a77b6.html#aa28bc5daebfa8f5f181888bbe49a77b6" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="481,233,576,260"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="413,207,470,226,468,231,411,213"/>
+<area shape="poly" id="edge14_Node000014_Node000013" title=" " alt="" coords="576,236,618,229,619,234,577,241"/>
+<area shape="rect" id="Node000016" href="$d4/dee/a00008_a918fff84a6c2437456cc8cf2ba4418a5.html#a918fff84a6c2437456cc8cf2ba4418a5" title=" " alt="" coords="328,233,406,260"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="216,223,312,237,312,242,215,229"/>
+<area shape="rect" id="Node000017" href="$d4/dee/a00008_ad09a810f0b29c538c99ccf82cd4b763c.html#ad09a810f0b29c538c99ccf82cd4b763c" title=" " alt="" coords="335,284,398,311"/>
+<area shape="poly" id="edge17_Node000015_Node000017" title=" " alt="" coords="216,228,261,244,309,270,322,276,320,280,307,274,259,249,215,233"/>
+<area shape="rect" id="Node000021" href="$db/db2/a00020_a6cbd3bc7e4a97f7074be477c41144972.html#a6cbd3bc7e4a97f7074be477c41144972" title="Mostra os vértices e suas adjacências no grafo." alt="" coords="323,360,411,387"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="229,371,307,371,307,376,229,376"/>
+</map>

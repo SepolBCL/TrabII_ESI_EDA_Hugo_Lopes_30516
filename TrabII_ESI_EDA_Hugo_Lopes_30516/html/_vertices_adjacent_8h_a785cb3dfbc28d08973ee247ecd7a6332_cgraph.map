@@ -1,0 +1,5 @@
+<map id="DeleteAllAdj" name="DeleteAllAdj">
+<area shape="rect" id="Node000001" title="Remove todos os nós de adjacência de uma lista ligada de adjacências." alt="" coords="5,5,98,32"/>
+<area shape="rect" id="Node000002" href="$_vertices_adjacent_8c.html#a9f762034d290723fa45279a7c482a101" title="Liberta a memória alocada para um nó de adjacência." alt="" coords="146,5,263,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,16,130,16,130,21,98,21"/>
+</map>

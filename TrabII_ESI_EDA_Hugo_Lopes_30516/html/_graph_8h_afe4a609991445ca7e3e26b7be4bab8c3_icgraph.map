@@ -1,0 +1,8 @@
+<map id="CountPaths" name="CountPaths">
+<area shape="rect" id="Node000001" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="288,29,377,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="360,16,350,10,333,8,316,10,307,15,305,20,309,28,305,30,300,21,303,11,314,5,333,3,352,5,363,12"/>
+<area shape="rect" id="Node000002" href="$_graph_8c.html#a9e03840147dd6e1d0d6fde9a6f730733" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="103,29,240,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="273,45,240,45,240,40,273,40"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="87,45,55,45,55,40,87,40"/>
+</map>

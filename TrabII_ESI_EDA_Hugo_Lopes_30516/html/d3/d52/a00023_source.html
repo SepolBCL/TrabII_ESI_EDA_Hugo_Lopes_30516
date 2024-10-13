@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho Prático de Estruturas de Dados Avançados: Código-Fonte de Vertices.h</title>
+<link rel="icon" href="../../Captura de ecrã 2024-05-25 005639.png" type="image/x-icon" />
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../Captura de ecrã 2024-05-25 005608.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Trabalho Prático de Estruturas de Dados Avançados<span id="projectnumber">&#160;001</span>
+   </div>
+   <div id="projectbrief">Fase II - Grafos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Vertices.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/d52/a00023.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d3/d52/a00023_af08ec37a8c99d747fb60fa15bc28678b.html#af08ec37a8c99d747fb60fa15bc28678b">   14</a></span><span class="preprocessor">#define _CRT_SECURE_NO_WARNINGS</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifndef VRT</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d3/d52/a00023_a23eb92fd11f6f00cb88b0a6e2197a92f.html#a23eb92fd11f6f00cb88b0a6e2197a92f">   17</a></span><span class="preprocessor">#define VRT</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include&quot;<a class="code" href="../../d5/d16/a00029.html">VerticesAdjacent.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d4/d6d/a00055.html">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d4/d6d/a00055_a59a543130a10c95f1e8642cf8c5645e8.html#a59a543130a10c95f1e8642cf8c5645e8">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d4/d6d/a00055_a59a543130a10c95f1e8642cf8c5645e8.html#a59a543130a10c95f1e8642cf8c5645e8">id</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d4/d6d/a00055_a7073bf2ee75a0428223992ef6dd6c6d4.html#a7073bf2ee75a0428223992ef6dd6c6d4">   28</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d4/d6d/a00055_a7073bf2ee75a0428223992ef6dd6c6d4.html#a7073bf2ee75a0428223992ef6dd6c6d4">visitado</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d4/d6d/a00055_a81793b232c84d495fd6fd2df5883a7f7.html#a81793b232c84d495fd6fd2df5883a7f7">   29</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../d3/d8b/a00059.html">Adjacent</a>* <a class="code hl_variable" href="../../d4/d6d/a00055_a81793b232c84d495fd6fd2df5883a7f7.html#a81793b232c84d495fd6fd2df5883a7f7">nextAdjacent</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d4/d6d/a00055_a526f6649326bba645a953478e688bdd8.html#a526f6649326bba645a953478e688bdd8">   30</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* <a class="code hl_variable" href="../../d4/d6d/a00055_a526f6649326bba645a953478e688bdd8.html#a526f6649326bba645a953478e688bdd8">nextVertice</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d3/d52/a00023_a3b09f37e675bcd48a01bf22155996872.html#a3b09f37e675bcd48a01bf22155996872">   31</a></span>} <a class="code hl_typedef" href="../../d3/d52/a00023_a3b09f37e675bcd48a01bf22155996872.html#a3b09f37e675bcd48a01bf22155996872">Node</a>;</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* <a class="code hl_function" href="../../d3/d52/a00023_aa73902e559feec8c1bb5c69137ed2500.html#aa73902e559feec8c1bb5c69137ed2500">CreateVertice</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* <a class="code hl_function" href="../../d3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6.html#aa28bc5daebfa8f5f181888bbe49a77b6">InsertVertice</a>(<a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* vertices, <a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* novo, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* <a class="code hl_function" href="../../d3/d52/a00023_a71070216b78aa3bc49e32755f0ce4213.html#a71070216b78aa3bc49e32755f0ce4213">DeleteVertice</a>(<a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* vertices, <span class="keywordtype">int</span> codVertice, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* <a class="code hl_function" href="../../d3/d52/a00023_a1336c120d301d7a04b4c2cf67b8d4177.html#a1336c120d301d7a04b4c2cf67b8d4177">WhereIsVertice</a>(<a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* inicio, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* <a class="code hl_function" href="../../d3/d52/a00023_a36c11fed31d504edb16338c508f03b26.html#a36c11fed31d504edb16338c508f03b26">DeleteAllAdjVert</a>(<a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* vertices, <span class="keywordtype">int</span> codAdj, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d52/a00023_a269580c763396e6049df5d42fc3e1dd0.html#a269580c763396e6049df5d42fc3e1dd0">ExistVertice</a>(<a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* inicio, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d52/a00023_a6cbd3bc7e4a97f7074be477c41144972.html#a6cbd3bc7e4a97f7074be477c41144972">ShowGraph</a>(<a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* graph);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d52/a00023_a108c36b33043240c00fabb2a396c4fd9.html#a108c36b33043240c00fabb2a396c4fd9">DestroiVertice</a>(<a class="code hl_struct" href="../../d4/d6d/a00055.html">Node</a>* ptNode);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">/* VRT */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aa00023_a108c36b33043240c00fabb2a396c4fd9_html_a108c36b33043240c00fabb2a396c4fd9"><div class="ttname"><a href="../../d3/d52/a00023_a108c36b33043240c00fabb2a396c4fd9.html#a108c36b33043240c00fabb2a396c4fd9">DestroiVertice</a></div><div class="ttdeci">bool DestroiVertice(Node *ptNode)</div><div class="ttdoc">Liberta a memória alocada para um vértice.</div><div class="ttdef"><b>Definição</b> Vertices.c:67</div></div>
+<div class="ttc" id="aa00023_a1336c120d301d7a04b4c2cf67b8d4177_html_a1336c120d301d7a04b4c2cf67b8d4177"><div class="ttname"><a href="../../d3/d52/a00023_a1336c120d301d7a04b4c2cf67b8d4177.html#a1336c120d301d7a04b4c2cf67b8d4177">WhereIsVertice</a></div><div class="ttdeci">Node * WhereIsVertice(Node *inicio, int id)</div><div class="ttdoc">Localiza um vértice com o ID especificado na lista ligada de vértices.</div><div class="ttdef"><b>Definição</b> Vertices.c:96</div></div>
+<div class="ttc" id="aa00023_a269580c763396e6049df5d42fc3e1dd0_html_a269580c763396e6049df5d42fc3e1dd0"><div class="ttname"><a href="../../d3/d52/a00023_a269580c763396e6049df5d42fc3e1dd0.html#a269580c763396e6049df5d42fc3e1dd0">ExistVertice</a></div><div class="ttdeci">bool ExistVertice(Node *inicio, int id)</div><div class="ttdoc">Verifica se um vértice com o ID especificado existe na lista ligada de vértices.</div><div class="ttdef"><b>Definição</b> Vertices.c:136</div></div>
+<div class="ttc" id="aa00023_a36c11fed31d504edb16338c508f03b26_html_a36c11fed31d504edb16338c508f03b26"><div class="ttname"><a href="../../d3/d52/a00023_a36c11fed31d504edb16338c508f03b26.html#a36c11fed31d504edb16338c508f03b26">DeleteAllAdjVert</a></div><div class="ttdeci">Node * DeleteAllAdjVert(Node *vertices, int codAdj, bool *res)</div><div class="ttdoc">Remove todas as adjacências com o código especificado de todos os vértices numa lista ligada de vérti...</div><div class="ttdef"><b>Definição</b> Vertices.c:296</div></div>
+<div class="ttc" id="aa00023_a3b09f37e675bcd48a01bf22155996872_html_a3b09f37e675bcd48a01bf22155996872"><div class="ttname"><a href="../../d3/d52/a00023_a3b09f37e675bcd48a01bf22155996872.html#a3b09f37e675bcd48a01bf22155996872">Node</a></div><div class="ttdeci">struct Node Node</div><div class="ttdoc">Estrutura para representar os vértices.</div></div>
+<div class="ttc" id="aa00023_a6cbd3bc7e4a97f7074be477c41144972_html_a6cbd3bc7e4a97f7074be477c41144972"><div class="ttname"><a href="../../d3/d52/a00023_a6cbd3bc7e4a97f7074be477c41144972.html#a6cbd3bc7e4a97f7074be477c41144972">ShowGraph</a></div><div class="ttdeci">bool ShowGraph(Node *graph)</div><div class="ttdoc">Mostra os vértices e suas adjacências no grafo.</div><div class="ttdef"><b>Definição</b> Vertices.c:334</div></div>
+<div class="ttc" id="aa00023_a71070216b78aa3bc49e32755f0ce4213_html_a71070216b78aa3bc49e32755f0ce4213"><div class="ttname"><a href="../../d3/d52/a00023_a71070216b78aa3bc49e32755f0ce4213.html#a71070216b78aa3bc49e32755f0ce4213">DeleteVertice</a></div><div class="ttdeci">Node * DeleteVertice(Node *vertices, int codVertice, bool *res)</div><div class="ttdoc">Remove um vértice com o código especificado de uma lista ligada de vértices.</div><div class="ttdef"><b>Definição</b> Vertices.c:236</div></div>
+<div class="ttc" id="aa00023_aa28bc5daebfa8f5f181888bbe49a77b6_html_aa28bc5daebfa8f5f181888bbe49a77b6"><div class="ttname"><a href="../../d3/d52/a00023_aa28bc5daebfa8f5f181888bbe49a77b6.html#aa28bc5daebfa8f5f181888bbe49a77b6">InsertVertice</a></div><div class="ttdeci">Node * InsertVertice(Node *vertices, Node *novo, bool *res)</div><div class="ttdoc">Insere um novo vértice numa lista ligada de vértices.</div><div class="ttdef"><b>Definição</b> Vertices.c:177</div></div>
+<div class="ttc" id="aa00023_aa73902e559feec8c1bb5c69137ed2500_html_aa73902e559feec8c1bb5c69137ed2500"><div class="ttname"><a href="../../d3/d52/a00023_aa73902e559feec8c1bb5c69137ed2500.html#aa73902e559feec8c1bb5c69137ed2500">CreateVertice</a></div><div class="ttdeci">Node * CreateVertice(int id, bool *res)</div><div class="ttdoc">Cria um novo vértice com o ID especificado.</div><div class="ttdef"><b>Definição</b> Vertices.c:28</div></div>
+<div class="ttc" id="aa00029_html"><div class="ttname"><a href="../../d5/d16/a00029.html">VerticesAdjacent.h</a></div></div>
+<div class="ttc" id="aa00055_a526f6649326bba645a953478e688bdd8_html_a526f6649326bba645a953478e688bdd8"><div class="ttname"><a href="../../d4/d6d/a00055_a526f6649326bba645a953478e688bdd8.html#a526f6649326bba645a953478e688bdd8">Node::nextVertice</a></div><div class="ttdeci">struct Node * nextVertice</div><div class="ttdef"><b>Definição</b> Vertices.h:30</div></div>
+<div class="ttc" id="aa00055_a59a543130a10c95f1e8642cf8c5645e8_html_a59a543130a10c95f1e8642cf8c5645e8"><div class="ttname"><a href="../../d4/d6d/a00055_a59a543130a10c95f1e8642cf8c5645e8.html#a59a543130a10c95f1e8642cf8c5645e8">Node::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definição</b> Vertices.h:27</div></div>
+<div class="ttc" id="aa00055_a7073bf2ee75a0428223992ef6dd6c6d4_html_a7073bf2ee75a0428223992ef6dd6c6d4"><div class="ttname"><a href="../../d4/d6d/a00055_a7073bf2ee75a0428223992ef6dd6c6d4.html#a7073bf2ee75a0428223992ef6dd6c6d4">Node::visitado</a></div><div class="ttdeci">bool visitado</div><div class="ttdef"><b>Definição</b> Vertices.h:28</div></div>
+<div class="ttc" id="aa00055_a81793b232c84d495fd6fd2df5883a7f7_html_a81793b232c84d495fd6fd2df5883a7f7"><div class="ttname"><a href="../../d4/d6d/a00055_a81793b232c84d495fd6fd2df5883a7f7.html#a81793b232c84d495fd6fd2df5883a7f7">Node::nextAdjacent</a></div><div class="ttdeci">struct Adjacent * nextAdjacent</div><div class="ttdef"><b>Definição</b> Vertices.h:29</div></div>
+<div class="ttc" id="aa00055_html"><div class="ttname"><a href="../../d4/d6d/a00055.html">Node</a></div><div class="ttdoc">Estrutura para representar os vértices.</div><div class="ttdef"><b>Definição</b> Vertices.h:26</div></div>
+<div class="ttc" id="aa00059_html"><div class="ttname"><a href="../../d3/d8b/a00059.html">Adjacent</a></div><div class="ttdoc">Estrutura para representar as adjacências.</div><div class="ttdef"><b>Definição</b> VerticesAdjacent.h:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
