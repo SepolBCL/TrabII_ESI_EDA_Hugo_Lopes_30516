@@ -1,7 +1,0 @@
-<map id="ResetVerticesVisitados" name="ResetVerticesVisitados">
-<area shape="rect" id="Node000001" title="Limpa o estado &quot;visitado&quot; de todos os vértices do grafo." alt="" coords="191,31,348,57"/>
-<area shape="rect" id="Node000002" href="$d7/d46/a00002_a9e03840147dd6e1d0d6fde9a6f730733.html#a9e03840147dd6e1d0d6fde9a6f730733" title="Conta o número de caminhos possíveis entre dois vértices num grafo." alt="" coords="5,5,143,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,34,143,30,143,25,175,29"/>
-<area shape="rect" id="Node000003" href="$d2/de7/a00014_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="49,56,99,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,59,100,69,99,64,175,54"/>
-</map>

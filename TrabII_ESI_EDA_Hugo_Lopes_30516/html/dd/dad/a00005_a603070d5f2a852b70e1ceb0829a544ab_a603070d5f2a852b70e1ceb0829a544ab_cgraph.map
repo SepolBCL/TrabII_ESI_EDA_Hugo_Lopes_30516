@@ -1,8 +1,0 @@
-<map id="InsertVertGraph" name="InsertVertGraph">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,118,32"/>
-<area shape="rect" id="Node000002" href="$db/db2/a00020_ab1d21034485a716467af25abb6266596.html#ab1d21034485a716467af25abb6266596" title="Verifica se um vértice com o ID especificado existe na lista ligada de vértices." alt="" coords="308,5,400,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,16,292,16,292,21,118,21"/>
-<area shape="rect" id="Node000003" href="$db/db2/a00020_aa28bc5daebfa8f5f181888bbe49a77b6.html#aa28bc5daebfa8f5f181888bbe49a77b6" title="Insere um novo vértice numa lista ligada de vértices." alt="" coords="166,31,260,57"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,25,151,31,150,36,118,31"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="260,33,292,27,293,32,261,38"/>
-</map>

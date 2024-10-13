@@ -1,9 +1,0 @@
-<map id="Graph.h" name="Graph.h">
-<area shape="rect" id="Node000001" title="Definições das estruturas e protótipos das funções relacionadas a grafos." alt="" coords="85,5,153,32"/>
-<area shape="rect" id="Node000002" href="$d7/d46/a00002.html" title="Implementação das funções relacionadas a grafos." alt="" coords="5,80,73,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,44,55,82,51,78,92,41"/>
-<area shape="rect" id="Node000003" href="$d4/dee/a00008.html" title=" " alt="" coords="97,80,141,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,48,122,80,116,80,116,48"/>
-<area shape="rect" id="Node000004" href="$d2/de7/a00014.html" title="Programa principal." alt="" coords="165,80,225,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,41,184,78,180,82,141,45"/>
-</map>

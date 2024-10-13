@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['countpaths_0',['CountPaths',['../d7/d46/a00002_afe4a609991445ca7e3e26b7be4bab8c3.html#afe4a609991445ca7e3e26b7be4bab8c3',1,'CountPaths(Graph *g, int src, int dst, int pathCount):&#160;Graph.c'],['../dd/dad/a00005_afe4a609991445ca7e3e26b7be4bab8c3.html#afe4a609991445ca7e3e26b7be4bab8c3',1,'CountPaths(Graph *g, int src, int dst, int pathCount):&#160;Graph.c']]],
-  ['countpathsvertices_1',['CountPathsVertices',['../d7/d46/a00002_a9e03840147dd6e1d0d6fde9a6f730733.html#a9e03840147dd6e1d0d6fde9a6f730733',1,'CountPathsVertices(Graph *g, int src, int dest):&#160;Graph.c'],['../dd/dad/a00005_a9e03840147dd6e1d0d6fde9a6f730733.html#a9e03840147dd6e1d0d6fde9a6f730733',1,'CountPathsVertices(Graph *g, int src, int dest):&#160;Graph.c']]],
-  ['creategraph_2',['CreateGraph',['../d7/d46/a00002_a385294e5113408793f93ce8174a616ec.html#a385294e5113408793f93ce8174a616ec',1,'CreateGraph(int *totV, bool *res):&#160;Graph.c'],['../dd/dad/a00005_a385294e5113408793f93ce8174a616ec.html#a385294e5113408793f93ce8174a616ec',1,'CreateGraph(int *totV, bool *res):&#160;Graph.c']]],
-  ['createvertice_3',['CreateVertice',['../db/db2/a00020_aa73902e559feec8c1bb5c69137ed2500.html#aa73902e559feec8c1bb5c69137ed2500',1,'CreateVertice(int id, bool *res):&#160;Vertices.c'],['../d3/d52/a00023_aa73902e559feec8c1bb5c69137ed2500.html#aa73902e559feec8c1bb5c69137ed2500',1,'CreateVertice(int id, bool *res):&#160;Vertices.c']]]
-];

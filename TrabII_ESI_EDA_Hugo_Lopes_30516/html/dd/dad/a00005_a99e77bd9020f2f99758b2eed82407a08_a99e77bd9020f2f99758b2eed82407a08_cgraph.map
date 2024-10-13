@@ -1,9 +1,0 @@
-<map id="InsertAdjaGraph" name="InsertAdjaGraph">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,120,57"/>
-<area shape="rect" id="Node000002" href="$d6/d5b/a00026_a4ca1a27f8ba5388978349cac522cf657.html#a4ca1a27f8ba5388978349cac522cf657" title="Insere uma nova adjacência com o ID de destino especificado na lista de adjacências." alt="" coords="187,5,259,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,32,171,24,172,29,121,38"/>
-<area shape="rect" id="Node000004" href="$db/db2/a00020_a1336c120d301d7a04b4c2cf67b8d4177.html#a1336c120d301d7a04b4c2cf67b8d4177" title="Localiza um vértice com o ID especificado na lista ligada de vértices." alt="" coords="168,56,278,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="121,50,153,56,152,61,120,56"/>
-<area shape="rect" id="Node000003" href="$d6/d5b/a00026_aeb98b0286d6bb867abb8f576a3fc328c.html#aeb98b0286d6bb867abb8f576a3fc328c" title="Cria um novo nó de adjacência com o ID especificado." alt="" coords="326,5,423,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,16,311,16,311,21,260,21"/>
-</map>
